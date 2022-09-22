@@ -4,7 +4,7 @@ import  "../styles.css"
 export const User=()=>{
     
     const getValues=(value)=>{
-        console.log(value)
+        console.log(event.target.value,event.target.name)
     }
     return(<div className="User">
         
@@ -16,7 +16,7 @@ export const User=()=>{
             </input>
             
             
-                <input name="password"type="text" placeHolder="Password"className="inputForm">
+                <input onChange={getValues}name="password"type="text" placeHolder="Password"className="inputForm">
             </input>
         
         </div>
