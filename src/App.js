@@ -9,6 +9,7 @@ import {Goi} from "./components/Goi"
 import {LivePrices} from "./components/LivePrices"
 import {WinLose} from "./components/WinLose"
 import {Liquidations} from "./components/Liquidations"
+import {Header} from "./components/Header"
 
 
 export default function App() {
@@ -18,8 +19,7 @@ export default function App() {
   }
   return (
     <div className="App">
-            <h1>oFears CryptoSite</h1>
-      <h2 style={styles.User}>Charts, Analysis, and more...</h2>
+    <Header />
       <User style={styles.User}/>
       <Tickers style={{backgroundColor:"red"}}/>
       <Notifs />
