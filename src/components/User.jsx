@@ -9,11 +9,11 @@ export const User=()=>{
         
         <div>
             <div>
-            <input placeHolder="User name" className="inputForm">
+            <input name="user"type="text"placeHolder="User name" className="inputForm">
             </input>
             
             
-                <input placeHolder="Password"className="inputForm">
+                <input name="password"type="text" placeHolder="Password"className="inputForm">
             </input>
         
         </div>
