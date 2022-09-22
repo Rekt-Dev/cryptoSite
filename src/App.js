@@ -26,9 +26,11 @@ export default function App() {
       <Tickers style={{backgroundColor:"red"}}/>
      
       <Notifs />
+      <div>
       <BasicCharts />
       <Fear />
       <Goi />
+      </div>
       <LivePrices />
       <Mcap />
       <WinLose />
