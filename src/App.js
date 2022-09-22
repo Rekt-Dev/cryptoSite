@@ -18,9 +18,16 @@ export default function App() {
     
   }
   return (<div>
-    <div className="Header">
+    <div  style={{
+        position: 'absolute', left: '40%'
+    }} >
     <Header />
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <div className="App">
    
    
