@@ -1,8 +1,12 @@
-import React from "react"
+import {useState} from "react"
 import  "../styles.css"
 
 export const User=()=>{
-    
+    const [user,setUser]=useState("")
+        const [pwd,setPwd]=useState("")
+                const [errMsg,setErrMsg]=useState("")
+
+
     const getValues=(value)=>{
         console.log(event.target.value,event.target.name)
     }
