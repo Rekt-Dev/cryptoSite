@@ -6,8 +6,45 @@
 .User {
   padding: 10px;
   margin: 10px;
-  border: 15px;
+  border: 2px solid #1c6ea4;
 }
+.Tickers {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+}
+.Notifs {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+}
+
+.Fear {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+}
+.Liveprices {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+}
+.Winlose {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+}
+.Liquidations {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+}
+.Charts {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+}
+
 .wrapper {
   width: fit-content;
   max-width: 100px;
