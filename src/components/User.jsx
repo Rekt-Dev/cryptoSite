@@ -5,6 +5,7 @@ export const User=()=>{
     const [user,setUser]=useState("")
         const [pwd,setPwd]=useState("")
                 const [errMsg,setErrMsg]=useState("")
+                const [success,setSuccess]=useState(false)
 
 
     const getValues=(value)=>{
