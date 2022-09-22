@@ -12,9 +12,13 @@ import {Liquidations} from "./components/Liquidations"
 
 
 export default function App() {
+  
+  const styles={ User:{color:"blue",},
+    
+  }
   return (
     <div className="App">
-      <User />
+      <User style={styles.User}/>
       <Tickers />
       <Notifs />
       <BasicCharts />
