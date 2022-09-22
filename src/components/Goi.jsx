@@ -1,7 +1,7 @@
 import React from "react"
 export const Goi=()=>{
     
-    return(<div>
+    return(<div className="Goi">
         Global open interest Component
     </div>
     )

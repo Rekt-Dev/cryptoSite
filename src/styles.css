@@ -56,3 +56,18 @@
   text-align: left;
   /* max-height: 100px; */
 }
+.Mcap {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+}
+.Goi {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+}
+.Charts {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+}

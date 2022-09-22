@@ -1,7 +1,7 @@
 import React from "react"
 export const Liquidations=()=>{
     
-    return(<div>
+    return(<div className="Liquidations">
         Liquidations Component
     </div>
     )
