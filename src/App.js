@@ -21,7 +21,10 @@ export default function App() {
     <div className="App">
     <Header />
       <User style={styles.User}/>
+     
+
       <Tickers style={{backgroundColor:"red"}}/>
+     
       <Notifs />
       <BasicCharts />
       <Fear />
