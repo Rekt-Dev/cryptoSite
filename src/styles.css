@@ -53,12 +53,14 @@
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
+  height: 10rem;
 }
 .Charts {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  height: 10rem;
+  height: 25rem;
+  width: 94rem;
 }
 
 .wrapper {
@@ -76,6 +78,7 @@
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
+  height: 10rem;
 }
 .Goi {
   padding: 10px;

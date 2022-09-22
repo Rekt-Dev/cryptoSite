@@ -27,14 +27,16 @@ export default function App() {
      
       <Notifs />
       <div>
-      <BasicCharts />
       <Fear />
       <Goi />
       </div>
+                  <BasicCharts />
+
       <LivePrices />
-      <Mcap />
       <WinLose />
       <Liquidations />
+      <Mcap />
+
       
       
 
