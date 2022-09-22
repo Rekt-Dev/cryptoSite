@@ -18,8 +18,10 @@ export default function App() {
   }
   return (
     <div className="App">
+            <h1>oFears CryptoSite</h1>
+      <h2 style={styles.User}>Charts, Analysis, and more...</h2>
       <User style={styles.User}/>
-      <Tickers />
+      <Tickers style={{backgroundColor:"red"}}/>
       <Notifs />
       <BasicCharts />
       <Fear />
@@ -30,8 +32,7 @@ export default function App() {
       <Liquidations />
       
       
-      <h1>oFears CryptoSite</h1>
-      <h2>Charts, Analysis, and more...</h2>
+
     </div>
   );
 }
