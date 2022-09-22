@@ -19,18 +19,24 @@ export default function App() {
   }
   return (
     <div className="App">
+      <div>
     <Header />
+   </div>
+   <br />
+   
+   
+   <div>
       <User style={styles.User}/>
-     
+     <br />
 
-      <Tickers style={{backgroundColor:"red"}}/>
-     
+      <Tickers />
+     </div>
       <Notifs />
       <div>
       <Fear />
       <Goi />
       </div>
-                  <BasicCharts />
+      <BasicCharts />
 
       <LivePrices />
       <WinLose />
