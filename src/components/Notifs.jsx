@@ -1,7 +1,7 @@
 import React from "react"
 export const Notifs=()=>{
     
-    return(<div>
+    return(<div className="Notifs">
         Notifs Component
     </div>
     )
