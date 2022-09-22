@@ -19,23 +19,16 @@ export default function App() {
   }
   return (
     <div className="App">
-      <div>
-    <Header />
-   </div>
-   <br />
    
    
-   <div>
-      <User style={styles.User}/>
-     <br />
+   
+   <div className="flexRow">
+      <User />
+     
 
       <Tickers />
      </div>
-      <Notifs />
-      <div>
-      <Fear />
-      <Goi />
-      </div>
+     
       <BasicCharts />
 
       <LivePrices />
@@ -43,7 +36,12 @@ export default function App() {
       <Liquidations />
       <Mcap />
 
-      
+       <div>
+              <Notifs />
+
+      <Fear />
+      <Goi />
+      </div>
       
 
     </div>

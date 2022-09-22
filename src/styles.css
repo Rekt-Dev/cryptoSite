@@ -24,8 +24,8 @@
   border: 2px solid #1c6ea4;
   display: flex;
   flex-direction: row;
-  width: 1300px;
-  height: 10rem;
+  width: 1600px;
+  height: 8rem;
   border-radius: 10px;
 }
 .Notifs {
@@ -34,6 +34,7 @@
   border: 2px solid #1c6ea4;
   display: flex;
   flex-direction: row;
+  height: 100px;
 }
 
 .Fear {
@@ -102,4 +103,10 @@
   flex-direction: column;
   color: blue;
   text-shadow: 2px 2px 2px #1c6ea4;
+}
+
+.flexRow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
