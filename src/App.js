@@ -9,7 +9,7 @@ import {Goi} from "./components/Goi"
 import {LivePrices} from "./components/LivePrices"
 import {WinLose} from "./components/WinLose"
 import {Liquidations} from "./components/Liquidations"
-import {Header} from "./components/Header"
+import {Header} from "./components/Header.jsx"
 
 
 export default function App() {
@@ -17,7 +17,8 @@ export default function App() {
   const styles={ User:{color:"blue",},
     
   }
-  return (
+  return (<div>
+    <Header />
     <div className="App">
    
    
@@ -43,7 +44,7 @@ export default function App() {
       <Goi />
       </div>
       
-
+</div>
     </div>
   );
 }
