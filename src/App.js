@@ -18,7 +18,9 @@ export default function App() {
     
   }
   return (<div>
+    <div className="Header">
     <Header />
+    </div>
     <div className="App">
    
    
