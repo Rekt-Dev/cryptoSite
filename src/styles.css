@@ -114,3 +114,15 @@
 .inputForm {
   width: 9.5rem;
 }
+
+.fearImg {
+  width: "100%";
+  resize: "inline";
+  background: "black";
+}
+
+tickerNames {
+  margin: 10px;
+
+  padding: 10px;
+}
