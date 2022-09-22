@@ -37,6 +37,7 @@
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
+  height: 10rem;
 }
 .Liveprices {
   padding: 10px;
@@ -57,7 +58,7 @@
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  height: 100px;
+  height: 10rem;
 }
 
 .wrapper {
@@ -80,6 +81,7 @@
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
+  height: 10rem;
 }
 .Charts {
   padding: 10px;
