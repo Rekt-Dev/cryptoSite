@@ -97,12 +97,12 @@
 }
 
 .Header {
-  border: 10px solid #1c6ea4;
+  border: 3px solid #1c5ac3;
   color: blue;
   text-shadow: 2px 2px 2px #1c6ea4;
   text-align: center;
-  width: 20rem;
-  justify-content: center;
+  border-radius: 3rem;
+  justify-content: flex-end;
   position: relative;
 }
 
@@ -132,6 +132,5 @@ tickerNames {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  height: 25rem;
   width: 50rem;
 }
