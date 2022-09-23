@@ -18,16 +18,10 @@ export default function App() {
     
   }
   return (<div>
-    <div  style={{
-        position: 'absolute', left: '40%'
-    }} >
+    <div  className="Header">
     <Header />
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+  
     <div className="App">
    
    
@@ -52,7 +46,9 @@ export default function App() {
       <Fear />
       <Goi />
       </div>
-      
+      <div>
+        another component im building now
+        </div>
 </div>
     </div>
   );
