@@ -11,12 +11,11 @@ import {WinLose} from "./components/WinLose"
 import {Liquidations} from "./components/Liquidations"
 import {Header} from "./components/Header.jsx"
 import {News} from "./components/News.jsx"
-
+//import cmc from "./services/cmc"
 
 export default function App() {
   
   const styles={ User:{color:"blue",},
-    
   }
   return (<div className="App  ">
     <div  className="Header">

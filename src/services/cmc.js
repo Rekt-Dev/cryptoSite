@@ -1,4 +1,4 @@
-const axios = require('axios');
+ const axios = require('axios');
 
 let response = null;
 new Promise(async (resolve, reject) => {
@@ -21,3 +21,5 @@ new Promise(async (resolve, reject) => {
     resolve(json);
   }
 });
+
+export default cmc
