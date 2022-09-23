@@ -127,6 +127,11 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
+.flexColumn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
 .inputForm {
   width: 9.5rem;

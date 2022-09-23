@@ -34,6 +34,7 @@ export default function App() {
      </div>
      <div className="tickerNames">      <Tickers />
 </div>
+
 <div className="Charts">
       <BasicCharts />
 </div>
@@ -44,12 +45,9 @@ export default function App() {
       <Liquidations />
       <Mcap />
 </div>
-       <div>
-              <Notifs />
 
-      <Fear />
-      <Goi />
-      </div>
+
+      
       <div className="News">
         <News />
         </div>
