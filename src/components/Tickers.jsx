@@ -5,28 +5,28 @@ export const Tickers=()=>{
       
       
    <div className="flexRow tickerNames">   
-      <div>
+      <div className="tickers-internal">
           BTC
       </div>
       
       
        <div className="tickers-internal">
           ETH
-      </div> <div>
+      </div > <div className="tickers-internal">
           USDT
-      </div> <div>
+      </div> <div className="tickers-internal">
           USDC
-      </div> <div>
+      </div> <div className="tickers-internal">
           BNB
-      </div> <div>
+      </div> <div className="tickers-internal">
           XRP
-      </div> <div>
+      </div> <div className="tickers-internal">
           BUSD
-      </div> <div>
+      </div> <div className="tickers-internal">
           ADA
-      </div> <div>
+      </div> <div className="tickers-internal">
           SOL
-      </div> <div>
+      </div> <div className="tickers-internal">
           DOGE
       </div>
     </div>
