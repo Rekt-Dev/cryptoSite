@@ -10,7 +10,7 @@ export const Tickers=()=>{
       </div>
       
       
-       <div>
+       <div className="tickers-internal">
           ETH
       </div> <div>
           USDT
