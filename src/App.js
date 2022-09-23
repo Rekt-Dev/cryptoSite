@@ -34,14 +34,16 @@ export default function App() {
      </div>
      <div className="tickerNames">      <Tickers />
 </div>
-<div>
+<div className="Charts">
       <BasicCharts />
 </div>
+<br />
+<div className="flexRow">
       <LivePrices />
       <WinLose />
       <Liquidations />
       <Mcap />
-
+</div>
        <div>
               <Notifs />
 
