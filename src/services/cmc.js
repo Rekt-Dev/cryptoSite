@@ -1,11 +1,11 @@
-const axios = require('axios');
+ const axios = require('axios');
 
 let response = null;
 new Promise(async (resolve, reject) => {
   try {
     response = await axios.get('https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
       headers: {
-        'X-CMC_PRO_API_KEY': 'b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c',
+        'X-CMC_PRO_API_KEY': '4078ca08-4eb2-48ed-8326-d13f2d7f1a22',
       },
     });
   } catch(ex) {
@@ -21,3 +21,5 @@ new Promise(async (resolve, reject) => {
     resolve(json);
   }
 });
+
+export default cmc

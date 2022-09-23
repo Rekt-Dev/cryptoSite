@@ -24,7 +24,7 @@
   border: 2px solid #1c6ea4;
   display: flex;
   flex-direction: row;
-  width: 70rem;
+  width: 58rem;
   height: 7rem;
   border-radius: 10px;
 }
@@ -107,7 +107,7 @@
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  width: 75rem;
+  width: 89rem;
 }
 
 .Header {
@@ -152,7 +152,8 @@ tickerNames {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  width: 69rem;
+  width: 59rem;
+  height: 15rem;
 }
 
 .tickers-internal {
