@@ -29,31 +29,7 @@ export const Tickers=()=>{
       </div> <div className="tickers-internal">
           10th
       </div>
-       <div className="tickers-internal">
-          10th
-      </div> <div className="tickers-internal">
-          10th
-      </div> <div className="tickers-internal">
-          10th
-      </div> <div className="tickers-internal">
-          10th
-      </div>
-       <div className="tickers-internal">
-          10th
-      </div> <div className="tickers-internal">
-          10th
-      </div> <div className="tickers-internal">
-          10th
-      </div> <div className="tickers-internal">
-          10th
-      </div> <div className="tickers-internal">
-          10th
-      </div> <div className="tickers-internal">
-          10th
-      </div>
-       <div className="tickers-internal">
-          10th
-      </div>
+      
     </div>
     </div>
     )

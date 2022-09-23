@@ -18,12 +18,12 @@ export default function App() {
   const styles={ User:{color:"blue",},
     
   }
-  return (<div>
+  return (<div className="App  ">
     <div  className="Header">
     <Header />
     </div>
   
-    <div className="App">
+    <div className="">
    
    
    
@@ -32,10 +32,11 @@ export default function App() {
      
 
      </div>
-     <div>      <Tickers />
+     <div className="tickerNames">      <Tickers />
 </div>
+<div>
       <BasicCharts />
-
+</div>
       <LivePrices />
       <WinLose />
       <Liquidations />
