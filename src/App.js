@@ -10,6 +10,7 @@ import {LivePrices} from "./components/LivePrices"
 import {WinLose} from "./components/WinLose"
 import {Liquidations} from "./components/Liquidations"
 import {Header} from "./components/Header.jsx"
+import {News} from "./components/News.jsx"
 
 
 export default function App() {
@@ -46,8 +47,8 @@ export default function App() {
       <Fear />
       <Goi />
       </div>
-      <div>
-        another component im building now
+      <div className="News">
+        <News />
         </div>
 </div>
     </div>
