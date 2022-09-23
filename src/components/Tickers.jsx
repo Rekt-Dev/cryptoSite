@@ -15,19 +15,19 @@ export const Tickers=()=>{
       </div > <div className="tickers-internal">
           USDT
       </div> <div className="tickers-internal">
-          USDC
-      </div> <div className="tickers-internal">
           BNB
       </div> <div className="tickers-internal">
           XRP
-      </div> <div className="tickers-internal">
-          BUSD
       </div> <div className="tickers-internal">
           ADA
       </div> <div className="tickers-internal">
           SOL
       </div> <div className="tickers-internal">
           DOGE
+      </div> <div className="tickers-internal">
+          9th
+      </div> <div className="tickers-internal">
+          10th
       </div>
     </div>
     </div>
