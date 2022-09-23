@@ -97,14 +97,13 @@
 }
 
 .Header {
-  display: flex;
   border: 10px solid #1c6ea4;
-  flex-direction: column;
   color: blue;
   text-shadow: 2px 2px 2px #1c6ea4;
   text-align: center;
   width: 20rem;
   justify-content: center;
+  position: relative;
 }
 
 .flexRow {

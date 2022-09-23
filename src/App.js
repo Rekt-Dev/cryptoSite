@@ -18,9 +18,10 @@ export default function App() {
     
   }
   return (<div>
-    <div className="Header">
+    <div  className="Header">
     <Header />
     </div>
+  
     <div className="App">
    
    
@@ -45,7 +46,9 @@ export default function App() {
       <Fear />
       <Goi />
       </div>
-      
+      <div>
+        another component im building now
+        </div>
 </div>
     </div>
   );
