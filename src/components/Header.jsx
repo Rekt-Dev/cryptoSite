@@ -3,8 +3,13 @@ import React from "react"
 
 
 export const Header=()=>{
-    return(<div className="Header">
-        <h1>0Fears CryptoSite</h1>
+    return(<div>
+        
+        <div className="Header">
+            
+        <h1>cryptost8</h1>
+    </div>
+    
     </div>
     )
 }
