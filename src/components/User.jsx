@@ -21,7 +21,7 @@ export const User=()=>{
             </input>
             
             
-                <input onChange={getValues}name="password"type="text" placeHolder="Password"className="inputForm">
+                <input onChange={getValues}name="password"type="password" placeHolder="Password"className="inputForm">
             </input>
             <br />
         <button>Submit</button>
