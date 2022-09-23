@@ -21,37 +21,44 @@ export default function App() {
     <div className="flexRow">
     <div  className="Header">
     <Header />
-    </div>
-   
-    <div className="">
-   
-   
-   
-   <div className="flexRow">
+      <div className="flexRow">
       <User />
      
 
      </div>
+    </div>
+    <div className="">
+   
+   
+   
+ 
+     <div >
+          <Mcap />
+</div>
+   <br />
+
      </div>
-     <div className="tickerNames">      <Tickers />
+     <div className="tickerNames">  
+         <Tickers />
+     
 </div>
 
 <div className="Charts">
       <BasicCharts />
 </div>
 
-<div className="flexRow">
+
+      <div className="News">
+        <News />
+        </div>
+<div className="flexRow width-5">
       <LivePrices />
       <WinLose />
       <Liquidations />
-      <Mcap />
 </div>
 
 
       
-      <div className="News">
-        <News />
-        </div>
 </div>
     </div>
   );
