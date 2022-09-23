@@ -129,10 +129,9 @@ tickerNames {
 }
 
 .News {
-  width: "100%";
-  resize: "inline";
-  background: "black";
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
+  height: 25rem;
+  width: 50rem;
 }

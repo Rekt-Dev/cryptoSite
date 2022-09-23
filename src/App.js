@@ -47,7 +47,7 @@ export default function App() {
       <Fear />
       <Goi />
       </div>
-      <div>
+      <div className="News">
         <News />
         </div>
 </div>
