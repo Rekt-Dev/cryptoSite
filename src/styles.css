@@ -94,7 +94,7 @@
   margin: 10px;
   border: 2px solid #1c6ea4;
   height: 10rem;
-  width: 25%;
+  width: 100%;
 }
 .Goi {
   padding: 10px;
@@ -152,8 +152,11 @@ tickerNames {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  width: 59rem;
+  width: 50%;
   height: 15rem;
+}
+.width-50 {
+  width: 50%;
 }
 
 .tickers-internal {
