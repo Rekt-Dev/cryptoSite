@@ -31,9 +31,9 @@ export default function App() {
       <User />
      
 
-      <Tickers />
      </div>
-     
+     <div>      <Tickers />
+</div>
       <BasicCharts />
 
       <LivePrices />
