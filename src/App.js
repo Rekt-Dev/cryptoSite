@@ -39,8 +39,7 @@ export default function App() {
 <div className="Charts">
       <BasicCharts />
 </div>
-<br />
-<br />
+
 <div className="flexRow">
       <LivePrices />
       <WinLose />
