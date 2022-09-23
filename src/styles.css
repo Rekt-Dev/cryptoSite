@@ -1,9 +1,9 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  font-weight: 300;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .User {
@@ -24,7 +24,7 @@
   border: 2px solid #1c6ea4;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 70rem;
   height: 7rem;
   border-radius: 10px;
 }
@@ -35,6 +35,7 @@
   display: flex;
   flex-direction: row;
   height: 100px;
+  width: 8%;
 }
 
 .Fear {
@@ -42,30 +43,35 @@
   margin: 10px;
   border: 2px solid #1c6ea4;
   height: 12rem;
+  width: 8%;
 }
 .Liveprices {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
   width: 16rem;
+  height: 16rem;
 }
 .Winlose {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
+  width: 17rem;
+  height: 16rem;
 }
 .Liquidations {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  height: 10rem;
+  height: 16rem;
+  width: 20rem;
 }
 .Charts {
   padding: 10px;
   margin: 10px;
-  border: 2px solid #1c6ea4;
-  height: 25rem;
-  width: 94rem;
+  border: 3px solid #1c6ea4;
+  height: 16rem;
+  width: 70rem;
 }
 
 .wrapper {
@@ -77,6 +83,7 @@
   margin-left: 10px;
   background: white;
   text-align: left;
+
   /* max-height: 100px; */
 }
 .Mcap {
@@ -84,26 +91,32 @@
   margin: 10px;
   border: 2px solid #1c6ea4;
   height: 10rem;
+  width: 25%;
 }
 .Goi {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
   height: 11rem;
+  width: 8%;
 }
 .Charts {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
+  width: 75rem;
 }
 
 .Header {
   border: 3px solid #1c5ac3;
   color: blue;
+  justify-content: center;
+  align-items: center;
   text-shadow: 2px 4px 4px #1c6ea4;
   text-align: center;
   border-radius: 3rem;
   position: relative;
+  width: 10rem;
 }
 
 .flexRow {
@@ -124,7 +137,6 @@
 
 tickerNames {
   margin: 10px;
-
   padding: 10px;
 }
 
@@ -132,12 +144,14 @@ tickerNames {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  width: 54rem;
+  width: 69rem;
 }
 
 .tickers-internal {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  height: 5rem;
+  border-radius: 10px;
+  height: 3rem;
+  width: 3rem;
 }
