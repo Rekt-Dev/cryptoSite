@@ -47,6 +47,7 @@
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
+  width: 16rem;
 }
 .Winlose {
   padding: 10px;
@@ -132,7 +133,7 @@ tickerNames {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  width: 50rem;
+  width: 54rem;
 }
 
 .tickers-internal {
