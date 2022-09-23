@@ -69,9 +69,12 @@
 .Charts {
   padding: 10px;
   margin: 10px;
-  border: 3px solid #1c6ea4;
+  border: 3px solid #1d5ab9;
+  border-style: unset;
   height: 16rem;
-  width: 70rem;
+  width: 130rem;
+  border: 3px groove #1c6ea4;
+  box-shadow: 3px 3px 15px 12px #000000;
 }
 
 .wrapper {
