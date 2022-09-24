@@ -24,11 +24,12 @@ export default function App() {
       <div className="flexRow">
       <User />
               <Tickers />
-<Notifs />
 <div className="Mcap">
           <Mcap />
 </div>
      </div>
+     <Notifs />
+
     </div>
     <div className="">
    
@@ -44,20 +45,38 @@ export default function App() {
      
 </div>
 
-<div className="Charts">
+<div id="wrapper-column" className="flexRow">
+<div className="Charts flexRow">
       <BasicCharts />
 </div>
-<br />
-
-
-      <div className="News">
-        <News />
-        </div>
-<div className="flexRow width-5">
+<div className="flexColumn">
       <LivePrices />
       <WinLose />
       <Liquidations />
 </div>
+<div className="flexColumn">
+      <LivePrices />
+      <WinLose />
+      <Liquidations />
+</div>
+<div className="flexColumn">
+      <LivePrices />
+      <WinLose />
+      <Liquidations />
+</div>
+    <div className="News">
+        <News />
+        </div>
+
+
+</div>
+
+
+<br />
+
+
+  
+
 
 
       
