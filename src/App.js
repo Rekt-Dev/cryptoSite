@@ -24,8 +24,10 @@ export default function App() {
       <div className="flexRow">
       <User />
               <Tickers />
-
-
+<Notifs />
+<div className="">
+          <Mcap />
+</div>
      </div>
     </div>
     <div className="">
@@ -34,7 +36,6 @@ export default function App() {
    
  
      <div >
-          <Mcap />
 </div>
    <br />
 
