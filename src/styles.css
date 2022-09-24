@@ -77,7 +77,7 @@
   border: 3px solid #1d5ab9;
   border-style: unset;
   height: 16rem;
-  width: 130rem;
+  width: 25rem;
   border: 3px groove #1c6ea4;
   box-shadow: 3px 3px 15px 12px #000000;
 }
@@ -164,9 +164,9 @@ tickerNames {
 
 .tickers-internal {
   padding: 10px;
-  margin: 10px;
+  margin: 8px;
   border: 2px solid #1c6ea4;
   border-radius: 10px;
-  height: 3rem;
+  height: 4rem;
   width: 3rem;
 }

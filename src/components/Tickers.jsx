@@ -1,18 +1,31 @@
 import React from "react"
+
+
 export const Tickers=()=>{
-    const getBtcData=()=>{
-        //fetch here
+    
+
+          async function getData() {
+    const response = await fetch(
+      `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=5000&convert=USD`
+    );
+    setJsonData(await response.json());
+    console.log(jsonData);
+    
+  
+        
+        
+return (<div>div {btcData.price}</div>)
     }
     return(<div className="Tickers">
       
       
    <div className="flexRow tickerNames">   
-      <div className="tickers-internal">
-          BTC {getBtcData}
+      <div className="tickers-internal justifyCenter">
+          BTC {getData}
       </div>
       
       
-       <div className="tickers-internal">
+       <div className="tickers-internal ">
           ETH
       </div > <div className="tickers-internal">
           USDT
