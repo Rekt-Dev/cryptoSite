@@ -1,12 +1,14 @@
 import React from "react"
 export const Tickers=()=>{
-    
+    const getBtcData=()=>{
+        //fetch here
+    }
     return(<div className="Tickers">
       
       
    <div className="flexRow tickerNames">   
       <div className="tickers-internal">
-          BTC
+          BTC {getBtcData}
       </div>
       
       
