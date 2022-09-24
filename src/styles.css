@@ -19,6 +19,9 @@
   height: 7rem;
 }
 .justifyCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Tickers {
   padding: 10px;
@@ -120,8 +123,6 @@
   text-shadow: 2px 4px 4px #1c6ea4;
   text-align: center;
   border-radius: 3rem;
-  position: relative;
-  width: 10rem;
 }
 
 .flexRow {
