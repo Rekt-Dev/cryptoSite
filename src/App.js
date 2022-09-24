@@ -46,6 +46,11 @@ export default function App() {
 </div>
 
 <div id="wrapper-column" className="flexRow">
+      <div className="flexColumn">
+      <LivePrices />
+      <WinLose />
+      <Liquidations />
+</div>
 <div className="Charts flexRow">
       <BasicCharts />
 </div>
@@ -59,11 +64,7 @@ export default function App() {
       <WinLose />
       <Liquidations />
 </div>
-<div className="flexColumn">
-      <LivePrices />
-      <WinLose />
-      <Liquidations />
-</div>
+
     <div className="News">
         <News />
         </div>
