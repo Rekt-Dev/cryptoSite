@@ -23,7 +23,8 @@ export default function App() {
     <Header />
       <div className="flexRow">
       <User />
-     
+              <Tickers />
+
 
      </div>
     </div>
@@ -39,7 +40,6 @@ export default function App() {
 
      </div>
      <div className="tickerNames">  
-         <Tickers />
      
 </div>
 
