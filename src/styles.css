@@ -3,7 +3,6 @@
   text-align: center;
   font-weight: 300;
   display: flex;
-  flex-direction: column;
 }
 
 .User {
@@ -61,7 +60,7 @@
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  width: 17rem;
+  width: 16rem;
   height: 16rem;
 }
 .Liquidations {
@@ -69,17 +68,16 @@
   margin: 10px;
   border: 2px solid #1c6ea4;
   height: 16rem;
-  width: 20rem;
+  width: 16rem;
 }
 .Charts {
   padding: 10px;
   margin: 10px;
   border: 3px solid #1d5ab9;
-  border-style: unset;
   height: 16rem;
-  width: 25rem;
   border: 3px groove #1c6ea4;
   box-shadow: 3px 3px 15px 12px #000000;
+  width: 100;
 }
 
 .wrapper {
@@ -112,7 +110,8 @@
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
-  width: 89rem;
+  width: 40rem;
+  height: 53rem;
 }
 
 .Header {
