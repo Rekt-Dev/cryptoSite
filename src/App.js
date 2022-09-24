@@ -19,7 +19,7 @@ export default function App() {
   }
   return (<div className="App  ">
     <div className="flexRow">
-    <div  className="Header">
+    <div  className="Header justifyCenter">
     <Header />
       <div className="flexRow">
       <User />
