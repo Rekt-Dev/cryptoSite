@@ -25,7 +25,7 @@ export default function App() {
       <User />
               <Tickers />
 <Notifs />
-<div className="">
+<div className="Mcap">
           <Mcap />
 </div>
      </div>
