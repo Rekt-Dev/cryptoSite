@@ -18,8 +18,8 @@ export default function App() {
   const styles={ User:{color:"blue",},
   }
   return (<div className="App  ">
-    <div className="flexRow">
-    <div  className="Header">
+    <div className="">
+    <div  className="Header justifyCenter">
     <Header />
       <div className="flexRow">
       <User />
@@ -46,6 +46,7 @@ export default function App() {
 <div className="Charts">
       <BasicCharts />
 </div>
+<br />
 
 
       <div className="News">

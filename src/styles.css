@@ -18,6 +18,8 @@
   width: 10rem;
   height: 7rem;
 }
+.justifyCenter {
+}
 .Tickers {
   padding: 10px;
   margin: 10px;
@@ -94,7 +96,7 @@
   margin: 10px;
   border: 2px solid #1c6ea4;
   height: 10rem;
-  width: 100%;
+  width: 27rem;
 }
 .Goi {
   padding: 10px;
