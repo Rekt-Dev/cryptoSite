@@ -74,7 +74,7 @@ export const BasicCharts=()=>{
   
 
       return ( <div>
-      <div className="Charts" >Charts</div>
+      <div className="" >Charts</div>
       <div id="chart-container"></div>
       </div>
       );
