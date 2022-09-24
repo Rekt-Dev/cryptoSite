@@ -24,11 +24,12 @@ export default function App() {
       <div className="flexRow">
       <User />
               <Tickers />
-<Notifs />
 <div className="Mcap">
           <Mcap />
 </div>
      </div>
+     <Notifs />
+
     </div>
     <div className="">
    
