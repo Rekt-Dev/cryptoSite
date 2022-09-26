@@ -14,11 +14,14 @@ import {News} from "./components/News.jsx"
 //import cmc from "./services/cmc"
 
 export default function App() {
+      
+//      cmc()
+      
   // here im testing objectifying styles for later use. 
   const styles={ User:{color:"blue",},
   }
-  return (<div className="App  ">
-    <div className="">
+  return (<div className="App">
+    <div>
     <div  className="Header justifyCenter">
     <Header />
       <div className="flexRow">

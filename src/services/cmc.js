@@ -1,4 +1,5 @@
- const axios = require('axios');
+import axios from "axios"
+
 
 let response = null;
 new Promise(async (resolve, reject) => {
