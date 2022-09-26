@@ -8,3 +8,7 @@ await fetch('https://api.cryptonator.com/api/ticker/btc-usd')
     console.log(data)
   })
   .catch(err => console.log(`this is the error mofo : ${err}`))}
+  
+  
+  
+  
