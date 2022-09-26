@@ -11,6 +11,7 @@ import {WinLose} from "./components/WinLose"
 import {Liquidations} from "./components/Liquidations"
 import {Header} from "./components/Header.jsx"
 import {News} from "./components/News.jsx"
+//import {GetData} from "./components/GetData"
 //import cmc from "./services/cmc"
 
 export default function App() {
