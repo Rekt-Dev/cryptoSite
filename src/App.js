@@ -14,7 +14,6 @@ import {News} from "./components/News.jsx"
 import {getData} from "./services/getData"
 //import {query} from "./services/fetch"
 //import cmc from "./services/cmc"
-
 export default function App() {
       
 //      cmc()
