@@ -13,7 +13,7 @@ import {Header} from "./components/Header.jsx"
 import {News} from "./components/News.jsx"
 import {getData} from "./services/getData"
 import {queryData} from "./services/getData"
-
+import consoleLog from "./components/Tickers"
 //import {query} from "./services/fetch"
 //import cmc from "./services/cmc"
 export default function App() {
@@ -23,14 +23,14 @@ export default function App() {
   // here im testing objectifying styles for later use. 
   const styles={ User:{color:"red",},
   }
-  return (<div className="App">
+  return (<div onClick={consoleLog}className="App">
     <div>
-    <div  className="Header justifyCenter">
+    <div  onClick={consoleLog}className="Header justifyCenter">
     <Header />
       <div className="flexRow">
       <User />
               <Tickers />
-              <button onClick={queryData} >bitcoins price update </button>
+              <button onClick={()=>console.log("i was clicked")} >bitcoins price update </button>
 <div className="Mcap">
           <Mcap />
 </div>
@@ -56,7 +56,7 @@ export default function App() {
       <Liquidations />
 </div>
 <div className="Charts flexRow">
-      <BasicCharts />
+      <BasicCharts onClick={()=>console.log("i was clicked")} />
 </div>
 <div className="flexColumn">
       <LivePrices />

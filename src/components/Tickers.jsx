@@ -1,9 +1,14 @@
-import React from "react"
-import { useState } from "react/cjs/react.production.min"
+import {React, useState} from "react"
 
 
 export const Tickers=()=>{
+    
     const [jsonData,setJsonData]=useState({})
+    
+    const consoleLog=()=>{
+        console.log("i was clicked")
+    }
+    
     const refreshBtcPrice=()=>{
         
         console.log("btc price refreshed")        
@@ -11,7 +16,7 @@ export const Tickers=()=>{
 
           async function getData() {
     const response = await fetch(
-      `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=5000&convert=USD`
+      "https://api.cryptonator.com/api/ticker/btc-usd"
     );
     setJsonData(await response.json());
     console.log(jsonData);
@@ -19,18 +24,18 @@ export const Tickers=()=>{
   
         
         
-return (<div>div {btcData.price}</div>)
+return (<div>div {jsonData.price}</div>)
     }
     return(<div className="Tickers">
       
       
    <div className="flexRow tickerNames">   
       <div className="tickers-internal justifyCenter">
-          BTC {getData}
+          BTC {consoleLog}
       </div>
       
       
-       <div onClick={refreshBtcPrice}className="tickers-internal ">
+       <div onClick={()=>{consoleLog}}className="tickers-internal ">
           ETH
       </div > <div className="tickers-internal">
           USDT
