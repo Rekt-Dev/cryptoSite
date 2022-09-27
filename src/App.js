@@ -32,7 +32,7 @@ export default function App() {
       <div className="flexRow">
       <User />
               <Tickers />
-              <button onClick={()=>console.log("i was clicked")} >bitcoins price update </button>
+              <button onClick={getData} >bitcoins price update </button>
 <div className="Mcap">
           <Mcap />
 </div>
