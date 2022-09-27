@@ -7,7 +7,7 @@ export  async function getData(){
   .then(data => {
     console.log(data)
   })
-  .catch(err => console.log(`this is the error mofo : ${err}`))}
+  .catch(err => console.log(`this is the error from getData mofo : ${err}`))}
   
   
   
