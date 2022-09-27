@@ -1,8 +1,13 @@
 import React from "react"
+import { useState } from "react/cjs/react.production.min"
 
 
 export const Tickers=()=>{
-    
+    const [jsonData,setJsonData]=useState({})
+    const refreshBtcPrice=()=>{
+        
+        console.log("btc price refreshed")        
+    }
 
           async function getData() {
     const response = await fetch(
@@ -25,7 +30,7 @@ return (<div>div {btcData.price}</div>)
       </div>
       
       
-       <div className="tickers-internal ">
+       <div onClick={refreshBtcPrice}className="tickers-internal ">
           ETH
       </div > <div className="tickers-internal">
           USDT

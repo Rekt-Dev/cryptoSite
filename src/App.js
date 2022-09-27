@@ -12,6 +12,8 @@ import {Liquidations} from "./components/Liquidations"
 import {Header} from "./components/Header.jsx"
 import {News} from "./components/News.jsx"
 import {getData} from "./services/getData"
+import {queryData} from "./services/getData"
+
 //import {query} from "./services/fetch"
 //import cmc from "./services/cmc"
 export default function App() {
@@ -28,7 +30,7 @@ export default function App() {
       <div className="flexRow">
       <User />
               <Tickers />
-              <button onClick={getData} >{styles.User.color}bitcoins price update </button>
+              <button onClick={queryData} >bitcoins price update </button>
 <div className="Mcap">
           <Mcap />
 </div>
@@ -38,9 +40,6 @@ export default function App() {
     </div>
     <div className="">
    
-   
-   
- 
      <div >
 </div>
    <br />
