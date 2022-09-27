@@ -13,9 +13,11 @@ import {Header} from "./components/Header.jsx"
 import {News} from "./components/News.jsx"
 import {getData} from "./services/getData"
 import {queryData} from "./services/getData"
-import consoleLog from "./components/Tickers"
+//import {consoleLog} from "./components/Tickers"
 //import {query} from "./services/fetch"
 //import cmc from "./services/cmc"
+
+
 export default function App() {
       
 //      cmc()
@@ -23,9 +25,9 @@ export default function App() {
   // here im testing objectifying styles for later use. 
   const styles={ User:{color:"red",},
   }
-  return (<div onClick={consoleLog}className="App">
+  return (<div className="App">
     <div>
-    <div  onClick={consoleLog}className="Header justifyCenter">
+    <div  className="Header justifyCenter">
     <Header />
       <div className="flexRow">
       <User />

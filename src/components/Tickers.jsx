@@ -5,9 +5,7 @@ export const Tickers=()=>{
     
     const [jsonData,setJsonData]=useState({})
     
-    const consoleLog=()=>{
-        console.log("i was clicked")
-    }
+   
     
     const refreshBtcPrice=()=>{
         
@@ -24,18 +22,17 @@ export const Tickers=()=>{
   
         
         
-return (<div>div {jsonData.price}</div>)
-    }
-    return(<div className="Tickers">
+return (<div>div {jsonData.price}
+    
       
       
    <div className="flexRow tickerNames">   
       <div className="tickers-internal justifyCenter">
-          BTC {consoleLog}
+          BTC {}
       </div>
       
       
-       <div onClick={()=>{consoleLog}}className="tickers-internal ">
+       <div onClick={()=>{}}className="tickers-internal ">
           ETH
       </div > <div className="tickers-internal">
           USDT
@@ -57,5 +54,4 @@ return (<div>div {jsonData.price}</div>)
       
     </div>
     </div>
-    )
-}
+)}}
