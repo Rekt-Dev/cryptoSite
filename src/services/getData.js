@@ -8,25 +8,17 @@ export async function getData() {
   const queryString = new URLSearchParams({
     mode: `no-cors`,
     "Content-Type": "application/json",
-    /*     "Access-Control-Allow-Origin": `*`,
-     */ "x-access-token": apiKey,
+    "Access-Control-Allow-Origin": `*`,
+    "x-access-token": apiKey,
     search: "Bit",
   });
 
   // Add the API key to the querystring
-  fetch(`${corsAnywhere}${url}`)
+  const response = await fetch(`${corsAnywhere}${url}`)
     .then((response) => response.json())
     .then((response) => {
       if (response.status === "success") {
-        const html = response.data.coins.map(
-          (coin) => `
-        <tr>
-          <td>${coin.rank}</td>
-          <td>${coin.name}</td>
-          <td>${coin.price}</td>
-        </tr>
-      `
-        );
+        console.log(response);
       }
     })
     .catch((error) => {
