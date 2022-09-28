@@ -1,4 +1,4 @@
-export async function getData() {
+export async function getData(coin) {
   // jshint esnext: true
   // This API key is only for testing, don't use this in production
   const apiKey = "coinrankingdfa125c1105b3ec3b9af03ab2268054ae4a3c06015b4b547";
@@ -13,12 +13,16 @@ export async function getData() {
     search: "Bit",
   });
 
+
   // Add the API key to the querystring
   const response = await fetch(`${corsAnywhere}${url}`)
     .then((response) => response.json())
     .then((response) => {
       if (response.status === "success") {
-        console.log(response);
+          let coins=response.data.coins
+        console.log(coins);
+        console.log("success u toilet") 
+        return coins       
       }
     })
     .catch((error) => {
