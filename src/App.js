@@ -47,7 +47,7 @@ export default function App() {
    <br />
 
      </div>
-     <div className="tickerNames">  
+     <div onClick={()=>console.log("i was clicked ticker names")}className="tickerNames">  
      
 </div>
 
@@ -57,8 +57,8 @@ export default function App() {
       <WinLose />
       <Liquidations />
 </div>
-<div className="Charts flexRow">
-      <BasicCharts onClick={()=>console.log("i was clicked")} />
+<div onClick={()=>console.log("i was clicked basic charts")} className="Charts flexRow">
+      <BasicCharts  />
 </div>
 <div className="flexColumn">
       <LivePrices />
