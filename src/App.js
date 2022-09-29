@@ -93,7 +93,9 @@ export default function App() {
             <User />
             <Tickers />
             <div className="Mcap">
-              <button>sup</button>
+              <button onClick={() => console.log("i was clicked sup")}>
+                sup
+              </button>
               <Mcap />
             </div>
           </div>
