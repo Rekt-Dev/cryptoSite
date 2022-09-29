@@ -92,8 +92,8 @@ export default function App() {
           <div className="flexRow">
             <User />
             <Tickers />
-            <button onClick={querySvr}>bitcoins price update </button>
             <div className="Mcap">
+              <button>sup</button>
               <Mcap />
             </div>
           </div>
