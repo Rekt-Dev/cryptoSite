@@ -44,7 +44,10 @@ export default function App() {
           let coins = response.data.coins;
           console.log(coins);
           setCurrencies(coins);
-          console.log("success u toilet", `here is coins array: ${currencies}`);
+          console.log(
+            "success",
+            `here is currencies state array: ${currencies}`
+          );
           return currencies;
         }
       })
