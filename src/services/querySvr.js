@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export async function querySvr() {
+    const [coinData,setCoinData]=useState([])
   const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
 
   const apiKey = "ae892c4004msh44f9eb6e9b4441cp13282cjsn9e8bfa4b5636";
@@ -14,8 +17,8 @@ export async function querySvr() {
       if (response.status === "success") {
         console.log("fetch success", response);
         const html = response.data.coins;
-return ({html?
-       html.map((coin,index) 
+return ({html.length>0
+     html.map((coin,index) 
           => (<div>
               <ul>
           <div>${{coin}=coin.rank,key={index}}</div>
