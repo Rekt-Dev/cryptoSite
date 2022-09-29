@@ -1,7 +1,8 @@
 import { useState } from "react";
-
+import {Card} from "../components/Card"
 export async function querySvr() {
     const [coinData,setCoinData]=useState([])
+    
   const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
 
   const apiKey = "ae892c4004msh44f9eb6e9b4441cp13282cjsn9e8bfa4b5636";
@@ -16,22 +17,14 @@ export async function querySvr() {
     .then((response) => {
       if (response.status === "success") {
         console.log("fetch success", response);
-        const html = response.data.coins;
-return ({html.length>0
-     html.map((coin,index) 
-          => (<div>
-              <ul>
-          <div>${{coin}=coin.rank,key={index}}</div>
-          <div>${coin.name}</div>
-          <div>${coin.price}</div>
-        </ul>
-        </div> 
-          
-})
+        setCoinData(response)
+return (<div>
+    <Card key={index} item={coin}
+    />
     
-      
-   
-    .catch((error) => {
-      console.error(error);
-
-    }
+    ))
+    : "No data to show"}
+        </div> )
+        }
+    
+        

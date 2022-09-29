@@ -13,7 +13,7 @@ import { Liquidations } from "./components/Liquidations";
 import { Header } from "./components/Header.jsx";
 import { News } from "./components/News.jsx";
 import { getFinnhubPrices } from "./services/getFinnhubPrices";
-import { querySvr } from "./services/querySvr";
+//import { querySvr } from "./services/querySvr";
 //import { getData } from "./services/getData.jsx";
 //import {consoleLog} from "./components/Tickers"
 //import {query} from "./services/fetch"
@@ -93,9 +93,7 @@ export default function App() {
             <User />
             <Tickers />
             <div className="Mcap">
-              <button
-                onClick={(() => console.log("i was clicked sup"), querySvr)}
-              >
+              <button onClick={() => console.log("i was clicked sup")}>
                 wtfsup
               </button>
               <Mcap />
