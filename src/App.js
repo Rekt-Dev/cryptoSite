@@ -12,6 +12,7 @@ import { WinLose } from "./components/WinLose";
 import { Liquidations } from "./components/Liquidations";
 import { Header } from "./components/Header.jsx";
 import { News } from "./components/News.jsx";
+import { getFinnhubPrices } from "./services/getFinnhubPrices";
 //import { getData } from "./services/getData.jsx";
 //import {consoleLog} from "./components/Tickers"
 //import {query} from "./services/fetch"
@@ -19,6 +20,7 @@ import { News } from "./components/News.jsx";
 
 export default function App() {
   const [currencies, setCurrencies] = useState([]);
+  const [serverResponse, setServerResponse] = useState({});
 
   async function getData() {
     // jshint esnext: true
@@ -90,7 +92,7 @@ export default function App() {
           <div className="flexRow">
             <User />
             <Tickers />
-            <button onClick={getData}>bitcoins price update </button>
+            <button onClick={querySvr}>bitcoins price update </button>
             <div className="Mcap">
               <Mcap />
             </div>
