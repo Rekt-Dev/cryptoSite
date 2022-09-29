@@ -19,6 +19,7 @@ export async function querySvr() {
         console.log("fetch success", response);
         setCoinData(response)
 return (<div>
+    <div>{coinData}</div>
     <Card key={index} item={coin}
     />
     
