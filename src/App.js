@@ -67,7 +67,6 @@ export default function App() {
     mode: `no-cors`,
     headers: {
       "Content-Type": "application/json",
-
       // 'Content-Type': 'application/x-www-form-urlencoded',
     },
     referrerPolicy: "no-referrer",
