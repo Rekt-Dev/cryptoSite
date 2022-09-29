@@ -13,6 +13,7 @@ import { Liquidations } from "./components/Liquidations";
 import { Header } from "./components/Header.jsx";
 import { News } from "./components/News.jsx";
 import { getFinnhubPrices } from "./services/getFinnhubPrices";
+import { querySvr } from "./services/querySvr";
 //import { getData } from "./services/getData.jsx";
 //import {consoleLog} from "./components/Tickers"
 //import {query} from "./services/fetch"
@@ -29,7 +30,6 @@ export default function App() {
       "coinrankingdfa125c1105b3ec3b9af03ab2268054ae4a3c06015b4b547";
     const url = "https://api.coinranking.com/v2/coins";
     const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
-    const resultsContainer = document.getElementById("results");
     const queryString = new URLSearchParams({
       mode: `no-cors`,
       "Content-Type": "application/json",
@@ -93,8 +93,10 @@ export default function App() {
             <User />
             <Tickers />
             <div className="Mcap">
-              <button onClick={() => console.log("i was clicked sup")}>
-                sup
+              <button
+                onClick={(() => console.log("i was clicked sup"), querySvr)}
+              >
+                wtfsup
               </button>
               <Mcap />
             </div>
@@ -121,7 +123,10 @@ export default function App() {
             <Liquidations />
           </div>
           <div
-            onClick={() => console.log("i was clicked basic charts")}
+            onClick={() => {
+              console.log("i was clicked basic charts"),
+                console.log("i was clicked mofo basic charts");
+            }}
             className="Charts flexRow"
           >
             <BasicCharts />

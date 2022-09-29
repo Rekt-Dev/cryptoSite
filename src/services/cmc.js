@@ -2,6 +2,8 @@ import axios from "axios"
 
 
 let response = null;
+    const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
+
 new Promise(async (resolve, reject) => {
   try {
     response = await axios.get('https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
