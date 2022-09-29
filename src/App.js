@@ -102,9 +102,7 @@ export default function App() {
           <Notifs />
         </div>
         <div className="">
-          <div>
-            <Card />
-          </div>
+          <div></div>
           <br />
         </div>
         <div
