@@ -81,8 +81,6 @@ export default function App() {
 
   //      cmc()
 
-  // here im testing objectifying styles for later use.
-  const styles = { User: { color: "red" } };
   return (
     <div className="App">
       <div>
