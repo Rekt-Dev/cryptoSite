@@ -12,52 +12,51 @@ import { WinLose } from "./components/WinLose";
 import { Liquidations } from "./components/Liquidations";
 import { Header } from "./components/Header.jsx";
 import { News } from "./components/News.jsx";
-//import { getFinnhubPrices } from "./services/getFinnhubPrices";
-//import { querySvr } from "./services/querySvr";
 //import { getData } from "./services/getData.jsx";
 //import {consoleLog} from "./components/Tickers"
 //import {query} from "./services/fetch"
 //import cmc from "./services/cmc"
-
 export default function App() {
   const [currencies, setCurrencies] = useState([]);
-  //const [serverResponse, setServerResponse] = useState({});
-
   async function getData() {
+    console.log(`getData activ8d`);
     // jshint esnext: true
     // This API key is only for testing, don't use this in production
     const apiKey =
       "coinrankingdfa125c1105b3ec3b9af03ab2268054ae4a3c06015b4b547";
-    const irlUrl = "https://api.coinranking.com/v2/coins";
+    const url = "https://api.coinranking.com/v2/coins";
     const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
-    const finalizedUrl = `${corsAnywhere}${irlUrl}`;
-    /*   const queryString = new URLSearchParams({
+    const resultsContainer = document.getElementById("results");
+    const queryString = new URLSearchParams({
       mode: `no-cors`,
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": `*`,
       "x-access-token": apiKey,
       search: "Bit",
-    }); */
-
-    let fetchOptions = {
-      method: `GET`,
-      mode: `no-cors`,
-      headers: {
-        "Content-Type": "application/json",
-      },
-      referrerPolicy: "no-referrer",
-    };
-
-    const response = await fetch(finalizedUrl, fetchOptions)
+    });
+    // Add the API key to the querystring
+    await fetch(`${corsAnywhere}${url}`)
       .then((response) => response.json())
       .then((response) => {
-        console.log(response);
-        return response;
+        if (response.status === "success") {
+          let coins = response.data.coins;
+          console.log(`${coins.symbol}:${coins[0].price}`);
+          setCurrencies(coins);
+          console.log(currencies);
+
+          console.log(
+            "success u toilet",
+            `here is btcs price: ${currencies[0]}`
+          );
+          console.log("success", `here is currencies state array: ${response}`);
+          return currencies;
+        }
       })
-      .catch((err) =>
-        console.log(`this is the error from getData mofo : ${err}`)
-      );
+      .catch((error) => {
+        console.error(error);
+      });
   }
+
   return (
     <div className="App">
       <div>
@@ -66,9 +65,8 @@ export default function App() {
           <div className="flexRow">
             <User />
             <Tickers />
+            <button onClick={getData}>bitcoins price update </button>
             <div className="Mcap">
-              <button onClick={() => getData}> button</button>
-
               <Mcap />
             </div>
           </div>
@@ -82,7 +80,10 @@ export default function App() {
           onClick={() => console.log("i was clicked ticker names")}
           className="tickerNames"
         ></div>
-
+        <div>
+          div{currencies}
+          {}
+        </div>
         <div id="wrapper-column" className="flexRow">
           <div className="flexColumn">
             <LivePrices />
@@ -90,10 +91,7 @@ export default function App() {
             <Liquidations />
           </div>
           <div
-            onClick={() => {
-              console.log("i was clicked basic charts"),
-                console.log("i was clicked mofo basic charts");
-            }}
+            onClick={() => console.log("i was clicked basic charts")}
             className="Charts flexRow"
           >
             <BasicCharts />
@@ -108,12 +106,10 @@ export default function App() {
             <WinLose />
             <Liquidations />
           </div>
-
           <div className="News">
             <News />
           </div>
         </div>
-
         <br />
       </div>
     </div>
