@@ -76,9 +76,10 @@ export default function App() {
           <Notifs />
         </div>
         <div className="">
-          <div></div>
           <br />
         </div>
+        <div>{btcsPrice}</div>
+
         <div
           onClick={() => console.log("i was clicked ticker names")}
           className="tickerNames"
