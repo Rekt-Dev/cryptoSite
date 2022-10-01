@@ -19,6 +19,7 @@ import { News } from "./components/News.jsx";
 export default function App() {
   const [currencies, setCurrencies] = useState([]);
   async function getData() {
+    console.log(`getData activ8d`);
     // jshint esnext: true
     // This API key is only for testing, don't use this in production
     const apiKey =
@@ -34,18 +35,20 @@ export default function App() {
       search: "Bit",
     });
     // Add the API key to the querystring
-    const response = await fetch(`${corsAnywhere}${url}`)
+    await fetch(`${corsAnywhere}${url}`)
       .then((response) => response.json())
       .then((response) => {
         if (response.status === "success") {
           let coins = response.data.coins;
-          console.log(coins);
+          console.log(`${coins.symbol}:${coins[0].price}`);
           setCurrencies(coins);
-          console.log("success u toilet", `here is coins array: ${currencies}`);
+          console.log(currencies);
+
           console.log(
-            "success",
-            `here is currencies state array: ${currencies}`
+            "success u toilet",
+            `here is btcs price: ${currencies[0]}`
           );
+          console.log("success", `here is currencies state array: ${response}`);
           return currencies;
         }
       })
@@ -53,29 +56,7 @@ export default function App() {
         console.error(error);
       });
   }
-  /* 
-  url = `https://api.coinranking.com/v2/coins`,
-  data = {}
-) {
-  await fetch(url, {
-    method: `GET`,
-    mode: `no-cors`,
-    headers: {
-      "Content-Type": "application/json",
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    referrerPolicy: "no-referrer",
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((err) =>
-      console.log(`this is the error from getData mofo : ${err}`)
-    ); */
-  //      cmc()
-  // here im testing objectifying styles for later use.
-  const styles = { User: { color: "red" } };
+
   return (
     <div className="App">
       <div>
