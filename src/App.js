@@ -48,76 +48,74 @@ export default function App() {
       referrerPolicy: "no-referrer",
     };
 
-    {
-      const response = await fetch(finalizedUrl, fetchOptions)
-        .then((response) => response.json())
-        .then((response) => {
-          console.log(response);
-          return response;
-        })
-        .catch((err) =>
-          console.log(`this is the error from getData mofo : ${err}`)
-        );
-    }
-    return (
-      <div className="App">
-        <div>
-          <div className="Header justifyCenter">
-            <Header />
-            <div className="flexRow">
-              <User />
-              <Tickers />
-              <div className="Mcap">
-                <button onClick={() => getData}> button</button>
+    const response = await fetch(finalizedUrl, fetchOptions)
+      .then((response) => response.json())
+      .then((response) => {
+        console.log(response);
+        return response;
+      })
+      .catch((err) =>
+        console.log(`this is the error from getData mofo : ${err}`)
+      );
+  }
+  return (
+    <div className="App">
+      <div>
+        <div className="Header justifyCenter">
+          <Header />
+          <div className="flexRow">
+            <User />
+            <Tickers />
+            <div className="Mcap">
+              <button onClick={() => getData}> button</button>
 
-                <Mcap />
-              </div>
-            </div>
-            <Notifs />
-          </div>
-          <div className="">
-            <div></div>
-            <br />
-          </div>
-          <div
-            onClick={() => console.log("i was clicked ticker names")}
-            className="tickerNames"
-          ></div>
-
-          <div id="wrapper-column" className="flexRow">
-            <div className="flexColumn">
-              <LivePrices />
-              <WinLose />
-              <Liquidations />
-            </div>
-            <div
-              onClick={() => {
-                console.log("i was clicked basic charts"),
-                  console.log("i was clicked mofo basic charts");
-              }}
-              className="Charts flexRow"
-            >
-              <BasicCharts />
-            </div>
-            <div className="flexColumn">
-              <LivePrices />
-              <WinLose />
-              <Liquidations />
-            </div>
-            <div className="flexColumn">
-              <LivePrices />
-              <WinLose />
-              <Liquidations />
-            </div>
-
-            <div className="News">
-              <News />
+              <Mcap />
             </div>
           </div>
-
+          <Notifs />
+        </div>
+        <div className="">
+          <div></div>
           <br />
         </div>
+        <div
+          onClick={() => console.log("i was clicked ticker names")}
+          className="tickerNames"
+        ></div>
+
+        <div id="wrapper-column" className="flexRow">
+          <div className="flexColumn">
+            <LivePrices />
+            <WinLose />
+            <Liquidations />
+          </div>
+          <div
+            onClick={() => {
+              console.log("i was clicked basic charts"),
+                console.log("i was clicked mofo basic charts");
+            }}
+            className="Charts flexRow"
+          >
+            <BasicCharts />
+          </div>
+          <div className="flexColumn">
+            <LivePrices />
+            <WinLose />
+            <Liquidations />
+          </div>
+          <div className="flexColumn">
+            <LivePrices />
+            <WinLose />
+            <Liquidations />
+          </div>
+
+          <div className="News">
+            <News />
+          </div>
+        </div>
+
+        <br />
       </div>
-    );
-  }
+    </div>
+  );
 }
