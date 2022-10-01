@@ -18,15 +18,14 @@ import { News } from "./components/News.jsx";
 //import cmc from "./services/cmc"
 export default function App() {
   const [currencies, setCurrencies] = useState([]);
+  const [btcsPrice, setBtcsPrice] = useState(0);
   async function getData() {
     console.log(`getData activ8d`);
-    // jshint esnext: true
-    // This API key is only for testing, don't use this in production
+
     const apiKey =
       "coinrankingdfa125c1105b3ec3b9af03ab2268054ae4a3c06015b4b547";
     const url = "https://api.coinranking.com/v2/coins";
     const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
-    const resultsContainer = document.getElementById("results");
     const queryString = new URLSearchParams({
       mode: `no-cors`,
       "Content-Type": "application/json",
@@ -39,16 +38,20 @@ export default function App() {
       .then((response) => response.json())
       .then((response) => {
         if (response.status === "success") {
+          console.log("RESPONSE SUCCESS !!!");
           let coins = response.data.coins;
-          console.log(`${coins.symbol}:${coins[0].price}`);
+
+          console.log(`btc ? ${coins[0].price}`);
           setCurrencies(coins);
+          setBtcsPrice(coins[0].price);
+          console.log(`here is btcsPrice:${btcsPrice}`);
           console.log(currencies);
 
           console.log(
             "success u toilet",
             `here is btcs price: ${currencies[0]}`
           );
-          console.log("success", `here is currencies state array: ${response}`);
+
           return currencies;
         }
       })
@@ -80,10 +83,6 @@ export default function App() {
           onClick={() => console.log("i was clicked ticker names")}
           className="tickerNames"
         ></div>
-        <div>
-          div{currencies}
-          {}
-        </div>
         <div id="wrapper-column" className="flexRow">
           <div className="flexColumn">
             <LivePrices />
