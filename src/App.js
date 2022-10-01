@@ -12,7 +12,7 @@ import { WinLose } from "./components/WinLose";
 import { Liquidations } from "./components/Liquidations";
 import { Header } from "./components/Header.jsx";
 import { News } from "./components/News.jsx";
-import { getFinnhubPrices } from "./services/getFinnhubPrices";
+//import { getFinnhubPrices } from "./services/getFinnhubPrices";
 //import { querySvr } from "./services/querySvr";
 //import { getData } from "./services/getData.jsx";
 //import {consoleLog} from "./components/Tickers"
@@ -21,129 +21,103 @@ import { getFinnhubPrices } from "./services/getFinnhubPrices";
 
 export default function App() {
   const [currencies, setCurrencies] = useState([]);
-  const [serverResponse, setServerResponse] = useState({});
+  //const [serverResponse, setServerResponse] = useState({});
 
   async function getData() {
     // jshint esnext: true
     // This API key is only for testing, don't use this in production
     const apiKey =
       "coinrankingdfa125c1105b3ec3b9af03ab2268054ae4a3c06015b4b547";
-    const url = "https://api.coinranking.com/v2/coins";
+    const irlUrl = "https://api.coinranking.com/v2/coins";
     const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
-    const queryString = new URLSearchParams({
+    const finalizedUrl = `${corsAnywhere}${irlUrl}`;
+    /*   const queryString = new URLSearchParams({
       mode: `no-cors`,
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": `*`,
       "x-access-token": apiKey,
       search: "Bit",
-    });
+    }); */
 
-    // Add the API key to the querystring
-    const response = await fetch(`${corsAnywhere}${url}`)
-      .then((response) => response.json())
-      .then((response) => {
-        if (response.status === "success") {
-          let coins = response.data.coins;
-          console.log(coins);
-          setCurrencies(coins);
-          console.log(
-            "success",
-            `here is currencies state array: ${currencies}`
-          );
-          return currencies;
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }
+    let fetchOptions = {
+      method: `GET`,
+      mode: `no-cors`,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      referrerPolicy: "no-referrer",
+    };
 
-  /* 
-  url = `https://api.coinranking.com/v2/coins`,
-  data = {}
-) {
-  await fetch(url, {
-    method: `GET`,
-    mode: `no-cors`,
-    headers: {
-      "Content-Type": "application/json",
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    referrerPolicy: "no-referrer",
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((err) =>
-      console.log(`this is the error from getData mofo : ${err}`)
-    ); */
-
-  //      cmc()
-
-  return (
-    <div className="App">
-      <div>
-        <div className="Header justifyCenter">
-          <Header />
-          <div className="flexRow">
-            <User />
-            <Tickers />
-            <div className="Mcap">
-              <button onClick={() => console.log("i was clicked sup")}>
-                wtfsup
-              </button>
-              <Mcap />
-            </div>
-          </div>
-          <Notifs />
-        </div>
-        <div className="">
-          <div></div>
-          <br />
-        </div>
-        <div
-          onClick={() => console.log("i was clicked ticker names")}
-          className="tickerNames"
-        ></div>
+    {
+      const response = await fetch(finalizedUrl, fetchOptions)
+        .then((response) => response.json())
+        .then((response) => {
+          console.log(response);
+          return response;
+        })
+        .catch((err) =>
+          console.log(`this is the error from getData mofo : ${err}`)
+        );
+    }
+    return (
+      <div className="App">
         <div>
-          div{currencies}
-          {}
-        </div>
+          <div className="Header justifyCenter">
+            <Header />
+            <div className="flexRow">
+              <User />
+              <Tickers />
+              <div className="Mcap">
+                <button onClick={() => getData}> button</button>
 
-        <div id="wrapper-column" className="flexRow">
-          <div className="flexColumn">
-            <LivePrices />
-            <WinLose />
-            <Liquidations />
+                <Mcap />
+              </div>
+            </div>
+            <Notifs />
+          </div>
+          <div className="">
+            <div></div>
+            <br />
           </div>
           <div
-            onClick={() => {
-              console.log("i was clicked basic charts"),
-                console.log("i was clicked mofo basic charts");
-            }}
-            className="Charts flexRow"
-          >
-            <BasicCharts />
-          </div>
-          <div className="flexColumn">
-            <LivePrices />
-            <WinLose />
-            <Liquidations />
-          </div>
-          <div className="flexColumn">
-            <LivePrices />
-            <WinLose />
-            <Liquidations />
+            onClick={() => console.log("i was clicked ticker names")}
+            className="tickerNames"
+          ></div>
+
+          <div id="wrapper-column" className="flexRow">
+            <div className="flexColumn">
+              <LivePrices />
+              <WinLose />
+              <Liquidations />
+            </div>
+            <div
+              onClick={() => {
+                console.log("i was clicked basic charts"),
+                  console.log("i was clicked mofo basic charts");
+              }}
+              className="Charts flexRow"
+            >
+              <BasicCharts />
+            </div>
+            <div className="flexColumn">
+              <LivePrices />
+              <WinLose />
+              <Liquidations />
+            </div>
+            <div className="flexColumn">
+              <LivePrices />
+              <WinLose />
+              <Liquidations />
+            </div>
+
+            <div className="News">
+              <News />
+            </div>
           </div>
 
-          <div className="News">
-            <News />
-          </div>
+          <br />
         </div>
-
-        <br />
       </div>
-    </div>
-  );
+    );
+  }
 }
