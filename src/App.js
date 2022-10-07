@@ -15,7 +15,7 @@ import { News } from "./components/News.jsx";
 //import { getData } from "./services/getData.jsx";
 //import {consoleLog} from "./components/Tickers"
 //import {query} from "./services/fetch"
-//import cmc from "./services/cmc"
+import cmc from "./services/cmc";
 export default function App() {
   const [currencies, setCurrencies] = useState([]);
   const [btcsPrice, setBtcsPrice] = useState(0);
@@ -31,7 +31,7 @@ export default function App() {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": `*`,
       "x-access-token": apiKey,
-      search: "Bit",
+      search: "Bit"
     });
     // Add the API key to the querystring
     await fetch(`${corsAnywhere}${url}`)
