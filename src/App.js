@@ -19,6 +19,8 @@ import { News } from "./components/News.jsx";
 export default function App() {
   const [currencies, setCurrencies] = useState([]);
   const [btcsPrice, setBtcsPrice] = useState(0);
+
+  //const loggedIn
   async function getData() {
     console.log(`getData activ8d`);
 
@@ -59,7 +61,7 @@ export default function App() {
         console.error(error);
       });
   }
-loggedIn?
+  //loggedIn?
 
   return (
     <div className="App">

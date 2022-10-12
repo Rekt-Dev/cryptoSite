@@ -1,33 +1,39 @@
-import {useState} from "react"
-import  "../styles.css"
+import { useState } from "react";
+import "../styles.css";
 
-export const User=()=>{
-    const [user,setUser]=useState("")
-        const [pwd,setPwd]=useState("")
-                const [errMsg,setErrMsg]=useState("")
-                const [success,setSuccess]=useState(false)
+export const User = () => {
+  const [user, setUser] = useState("");
+  const [pwd, setPwd] = useState("");
+  const [errMsg, setErrMsg] = useState("");
+  const [success, setSuccess] = useState(false);
 
-
-    const getValues=(value)=>{
-        console.log(event.target.value,event.target.name)
-    }
-    return(<div className="User">
-        
-        User Component
-        
+  const getValues = (event) => {
+    console.log(event.target.value, event.target.name);
+  };
+  return (
+    <div className="User">
+      User Component
+      <div>
         <div>
-            <div>
-            <input onChange={getValues} name="user"type="text"placeHolder="User name" className="inputForm">
-            </input>
-            
-            
-                <input onChange={getValues}name="password"type="password" placeHolder="Password"className="inputForm">
-            </input>
-            <br />
-        <button>Submit</button>
+          <input
+            onChange={getValues}
+            name="user"
+            type="text"
+            placeHolder="User name"
+            className="inputForm"
+          ></input>
+
+          <input
+            onChange={getValues}
+            name="password"
+            type="password"
+            placeHolder="Password"
+            className="inputForm"
+          ></input>
+          <br />
+          <button>Submit</button>
         </div>
-        
+      </div>
     </div>
-    </div>
-    )
-}
+  );
+};
