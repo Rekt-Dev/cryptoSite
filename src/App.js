@@ -1,6 +1,6 @@
 import "./styles.css";
 import { useState } from "react";
-import { User } from "./components/User";
+import User from "./components/User/User";
 import { Tickers } from "./components/Tickers";
 import { Notifs } from "./components/Notifs";
 import { Mcap } from "./components/Mcap";
