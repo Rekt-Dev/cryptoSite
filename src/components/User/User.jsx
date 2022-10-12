@@ -23,7 +23,7 @@ const User = (props) => {
   };
 
   return (
-    <div className="WinLose">
+    <div className={"Winlose"}>
       <form className={styles.form} onSubmit={onSubmitForm}>
         <div className={styles.formGroup}>
           <label className={styles.formLabel}>Email</label>
