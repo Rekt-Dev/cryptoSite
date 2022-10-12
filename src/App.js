@@ -18,7 +18,8 @@ import { News } from "./components/News.jsx";
 //import cmc from "./services/cmc";
 export default function App() {
   const [currencies, setCurrencies] = useState([]);
-  const [btcsPrice, setBtcsPrice] = useState(0);
+  const [btcsPrice, setBtcsPrice] = useState(1000000);
+  const [toilethsPrice, setToilethsPrice] = useState(-1500);
 
   //const loggedIn
   async function getData() {
@@ -51,7 +52,8 @@ export default function App() {
 
           console.log(
             "success u toilet",
-            `here is btcs price: ${currencies[0]}`
+            `here is btcs price: ${currencies[0]}`,
+            `here is toileths price: ${currencies[1]}`
           );
 
           return currencies;
@@ -78,7 +80,7 @@ export default function App() {
           <Notifs />
         </div>
         <div className="">
-          <div></div>
+          <div>This is beh teh sehs price{btcsPrice}</div>
           <br />
         </div>
         <div
