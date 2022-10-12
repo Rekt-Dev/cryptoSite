@@ -44,10 +44,13 @@ export default function App() {
           console.log("RESPONSE SUCCESS !!!");
           let coins = response.data.coins;
 
-          console.log(`btc ? ${coins[0].price}`);
+          console.log(`btcs price:  ${coins[0].price}`);
           setCurrencies(coins);
           setBtcsPrice(coins[0].price);
+          setToilethsPrice(coins[1].price);
           console.log(`here is btcsPrice:${btcsPrice}`);
+          console.log(`here is toileths price :${toilethsPrice}`);
+
           console.log(currencies);
 
           console.log(
@@ -80,7 +83,10 @@ export default function App() {
           <Notifs />
         </div>
         <div className="">
-          <div>This is beh teh sehs price{btcsPrice}</div>
+          <div>
+            This is beh teh sehs price{btcsPrice} <br />
+            This is toileths price{toilethsPrice}
+          </div>
           <br />
         </div>
         <div
