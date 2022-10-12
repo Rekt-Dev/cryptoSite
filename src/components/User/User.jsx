@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./LoginForm.module.css";
+//import styles1 from "../styles.css";
 
 const User = (props) => {
   const [form, setForm] = useState({
@@ -22,46 +23,48 @@ const User = (props) => {
   };
 
   return (
-    <form className={styles.form} onSubmit={onSubmitForm}>
-      <div className={styles.formGroup}>
-        <label className={styles.formLabel}>Email</label>
-        <input
-          className={styles.formField}
-          type="text"
-          aria-label="Email field"
-          name="email"
-          value={form.email}
-          onChange={onUpdateField}
-        />
-      </div>
-      <div className={styles.formGroup}>
-        <label className={styles.formLabel}>Password</label>
-        <input
-          className={styles.formField}
-          type="password"
-          aria-label="Password field"
-          name="password"
-          value={form.password}
-          onChange={onUpdateField}
-        />
-      </div>
-      <div className={styles.formGroup}>
-        <label className={styles.formLabel}>Confirm Password</label>
-        <input
-          className={styles.formField}
-          type="password"
-          aria-label="Confirm password field"
-          name="confirmPassword"
-          value={form.confirmPassword}
-          onChange={onUpdateField}
-        />
-      </div>
-      <div className={styles.formActions}>
-        <button className={styles.formSubmitBtn} type="submit">
-          Login
-        </button>
-      </div>
-    </form>
+    <div className="WinLose">
+      <form className={styles.form} onSubmit={onSubmitForm}>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Email</label>
+          <input
+            className={styles.formField}
+            type="text"
+            aria-label="Email field"
+            name="email"
+            value={form.email}
+            onChange={onUpdateField}
+          />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Password</label>
+          <input
+            className={styles.formField}
+            type="password"
+            aria-label="Password field"
+            name="password"
+            value={form.password}
+            onChange={onUpdateField}
+          />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Confirm Password</label>
+          <input
+            className={styles.formField}
+            type="password"
+            aria-label="Confirm password field"
+            name="confirmPassword"
+            value={form.confirmPassword}
+            onChange={onUpdateField}
+          />
+        </div>
+        <div className={styles.formActions}>
+          <button className={styles.formSubmitBtn} type="submit">
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
 
