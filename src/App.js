@@ -69,7 +69,6 @@ export default function App() {
         <div className="Header justifyCenter">
           <Header />
           <div className="flexRow">
-            <User />
             <Tickers />
             <button onClick={getData}>bitcoins price update </button>
             <div className="Mcap">
