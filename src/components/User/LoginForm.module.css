@@ -32,7 +32,7 @@
 .formSubmitBtn {
   padding: 0.5rem 0.7rem;
   min-width: 5rem;
-  background-color: #9333ea;
+  background-color: #33ea52;
   color: #f3e8ff;
   text-transform: uppercase;
   font-weight: 500;
@@ -40,5 +40,5 @@
 .WinLose {
   padding: 5px;
   margin: 10px;
-  border: 3px solid #1d5ab9;
+  border: 3px solid #539e44;
 }
