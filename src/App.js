@@ -87,7 +87,7 @@ export default function App() {
         ></div>
         <div id="wrapper-column" className="flexRow">
           <div className="flexColumn">
-            <LivePrices />
+            <User />
             <WinLose />
             <Liquidations />
           </div>
