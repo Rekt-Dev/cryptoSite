@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import { Mcap } from "../components/Mcap";
+import { MiniChart } from "../components/MiniChart";
 export const BasicCharts = (props) => {
   var myDataSource = {
     chart: {
@@ -89,12 +89,22 @@ export const BasicCharts = (props) => {
       <div className="">
         <h3> Basic Charts</h3>
       </div>
-      <div>
-        <Mcap />
-        <Mcap />
-        <Mcap />
-        <Mcap />
-        <Mcap />
+      <div className="flexColumn">
+        <div className="flexRow">
+          <MiniChart />
+        </div>
+        <div className="flexRow">
+          <MiniChart />
+        </div>
+        <div className="flexRow">
+          <MiniChart />
+        </div>
+        <div className="flexRow">
+          <MiniChart />
+        </div>
+        <div className="flexRow">
+          <MiniChart />
+        </div>
       </div>
       <div>
         <div>

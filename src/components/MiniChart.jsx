@@ -3,11 +3,11 @@ export const MiniChart = () => {
   return (
     <div
       onClick={() => {
-        console.log("liveprices clicked ");
+        console.log("minichart clicked ");
       }}
-      className="Liveprices"
+      className="Mcap"
     >
-      <h2> Live Prices Component</h2>
+      <h2> miniChart Component</h2>
       <div></div>
     </div>
   );
