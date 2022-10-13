@@ -3,7 +3,7 @@ import { React } from "react";
 
 export const Tickers = (props) => {
   return (
-    <div className="flexRow tickerNames">
+    <div className="flexRow tickerNames Header">
       <div className="tickers-internal">
         BTC <br />
         {Number(props.coins[0]).toFixed(0)}{" "}

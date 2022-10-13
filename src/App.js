@@ -72,7 +72,7 @@ export default function App() {
           setDogesPrice(coins[9].price);
           setDotsPrice(coins[10].price);
           setMaticsPrice(coins[11].price);
-          setDaisPrice(coins[8].price);
+          setDaisPrice(coins[12].price);
 
           console.log(currencies);
 
@@ -105,8 +105,6 @@ export default function App() {
                 daisPrice
               ]}
             />
-
-            <div></div>
           </div>
         </div>
         <div className="">
