@@ -164,6 +164,8 @@
   text-shadow: 2px 4px 4px #1c6ea4;
   text-align: center;
   border-radius: 3rem;
+  width: 90%;
+  justify-content: center;
 }
 
 .flexRow {
