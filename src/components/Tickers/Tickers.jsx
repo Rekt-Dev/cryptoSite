@@ -14,35 +14,35 @@ export const Tickers = (props) => {
       </div>
 
       <div className="tickers-internal justifyCenter">
-        BNB {Number(props.state[1]).toFixed(2)}
+        BNB {Number(props.state[2]).toFixed(2)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        XRPee {Number(props.state[1]).toFixed(2)}
+        XRPee {Number(props.state[3]).toFixed(2)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        ADA {Number(props.state[1]).toFixed(2)}
+        ADA {Number(props.state[4]).toFixed(2)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        SOL {Number(props.state[1]).toFixed(2)}
+        SOL {Number(props.state[5]).toFixed(2)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        DOGE {Number(props.state[1]).toFixed(2)}
+        DOGE {Number(props.state[6]).toFixed(2)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        DOT {Number(props.state[1]).toFixed(2)}
+        DOT {Number(props.state[7]).toFixed(2)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        MATIC {Number(props.state[1]).toFixed(2)}
+        MATIC {Number(props.state[8]).toFixed(2)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        DAI {Number(props.state[1]).toFixed(2)}
+        DAI {Number(props.state[9]).toFixed(2)}
       </div>
     </div>
   );
