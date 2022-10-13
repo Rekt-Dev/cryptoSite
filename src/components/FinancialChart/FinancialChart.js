@@ -35,7 +35,7 @@ export const FinancialChart = () => {
   );
   const height = 300;
   const width = 600;
-  const margin = { left: 40, right: 0, top: 50, bottom: 0 };
+  const margin = { left: 10, right: 20, top: 30, bottom: 14 };
 
   const ema12 = ema()
     .id(1)
@@ -117,14 +117,14 @@ export const FinancialChart = () => {
       xExtents={xExtents}
       zoomAnchor={lastVisibleItemBasedZoomAnchor}
     >
-      {/*  <Chart
+      <Chart
         id={2}
         height={barChartHeight}
         origin={barChartOrigin}
         yExtents={barChartExtents}
       >
         <BarSeries fillStyle={volumeColor} yAccessor={volumeSeries} />
-      </Chart> */}
+      </Chart>
       <Chart id={3} height={chartHeight} yExtents={candleChartExtents}>
         <XAxis showGridLines showTickLabel={false} />
         <YAxis showGridLines tickFormat={pricesDisplayFormat} />

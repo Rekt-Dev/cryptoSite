@@ -115,7 +115,7 @@ export default function App() {
               ]}
             />
           </div>
-          <Mcap />
+          <Mcap function={getData} />
         </div>
 
         <div

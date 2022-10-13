@@ -88,16 +88,19 @@ export const BasicCharts = (props) => {
 
   return (
     <div>
-      <div className=""></div>
-      <div className="flexColumn">
-        <div>
-          <FinancialChart />
-        </div>
-        <div className="flexRow"></div>
-      </div>
       <div></div>
-      <Button onClick={props.function}> manual price update </Button>
-      <div id="chart-container"></div>
+      <div>
+        <div> </div>
+        <div></div>
+      </div>
+
+      <div id="chart-container">
+        <FinancialChart />
+      </div>
+      <div>
+        {" "}
+        <FinancialChart />
+      </div>
     </div>
   );
 };

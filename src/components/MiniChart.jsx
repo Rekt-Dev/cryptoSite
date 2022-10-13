@@ -11,7 +11,8 @@ export const MiniChart = () => {
     >
       <h2> miniChart Component</h2>
       <div>
-        <FinancialChart />
+        {/*         <FinancialChart />
+         */}{" "}
       </div>
     </div>
   );
