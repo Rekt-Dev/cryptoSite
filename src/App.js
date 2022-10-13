@@ -1,7 +1,7 @@
 import "./styles.css";
 import { useEffect, useState } from "react";
 import User from "./components/User/User";
-import { Tickers } from "./components/Tickers";
+import { Tickers } from "./components/Tickers/Tickers.jsx";
 import { Notifs } from "./components/Notifs";
 import { Mcap } from "./components/Mcap";
 import { BasicCharts } from "./components/BasicCharts";
@@ -39,7 +39,7 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       getData();
-    }, 10000);
+    }, 85000);
     return () => clearInterval(interval);
   });
 
@@ -96,7 +96,20 @@ export default function App() {
         <div className="Header justifyCenter">
           <Header />
           <div className="flexRow">
-            <Tickers />
+            <Tickers
+              state={[
+                btcsPrice,
+                toilethsPrice,
+                bnbsPrice,
+                xrpeesPrice,
+                adasPrice,
+                solsPrice,
+                dogesPrice,
+                dotsPrice,
+                maticsPrice,
+                daisPrice
+              ]}
+            />
             <button onClick={getData}>bitcoins price update </button>
             <div className="Mcap">
               <Mcap />
@@ -105,26 +118,6 @@ export default function App() {
           <Notifs />
         </div>
         <div className="">
-          <div>
-            This is beh teh sehs price{btcsPrice} <br />
-            This is toileths price{toilethsPrice}
-            <br />
-            This is bnbs price{bnbsPrice}
-            <br />
-            This is xrpees price{xrpeesPrice}
-            <br />
-            This is adas price{adasPrice}
-            <br />
-            This is sols price{solsPrice}
-            <br />
-            This is doges price{dogesPrice}
-            <br />
-            This is dots price{dotsPrice}
-            <br />
-            This is matics price{maticsPrice}
-            <br />
-            This is dais price{daisPrice}
-          </div>
           <br />
         </div>
         <div
