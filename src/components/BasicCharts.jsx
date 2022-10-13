@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import { MiniChart } from "../components/MiniChart";
+
+import { FinancialChart } from "./FinancialChart/FinancialChart";
 export const BasicCharts = (props) => {
   var myDataSource = {
     chart: {
@@ -88,7 +90,13 @@ export const BasicCharts = (props) => {
     <div>
       <div className=""></div>
       <div className="flexColumn">
+        <div>
+          <FinancialChart />
+        </div>
         <div className="flexRow">
+          <MiniChart />
+        </div>
+        {/* <div className="flexRow">
           <MiniChart />
         </div>
         <div className="flexRow">
@@ -99,10 +107,7 @@ export const BasicCharts = (props) => {
         </div>
         <div className="flexRow">
           <MiniChart />
-        </div>
-        <div className="flexRow">
-          <MiniChart />
-        </div>
+        </div> */}
       </div>
       <div></div>
       <Button onClick={props.function}> manual price update </Button>
