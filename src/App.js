@@ -35,7 +35,7 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       getData();
-    }, 85000);
+    }, 180000);
     return () => clearInterval(interval);
   });
 
