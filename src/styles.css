@@ -96,6 +96,7 @@
   border: 2px solid #1c6ea4;
   width: 16rem;
   height: 16rem;
+  box-shadow: 3px 3px 10px 10px #2c3f6d;
 }
 .Winlose {
   padding: 10px;
