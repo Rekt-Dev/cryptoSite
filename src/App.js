@@ -1,5 +1,5 @@
 import "./styles.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import User from "./components/User/User";
 import { Tickers } from "./components/Tickers";
 import { Notifs } from "./components/Notifs";
@@ -20,6 +20,21 @@ export default function App() {
   const [currencies, setCurrencies] = useState([]);
   const [btcsPrice, setBtcsPrice] = useState(1000000);
   const [toilethsPrice, setToilethsPrice] = useState(-1500);
+  const [bnbsPrice, setBnbsPrice] = useState([]);
+  const [xrpeesPrice, setXrpeessPrice] = useState([]);
+  const [adasPrice, setAdasPrice] = useState([]);
+  const [solsPrice, setSolsPrice] = useState([]);
+  const [dogesPrice, setDogesPrice] = useState([]);
+  const [dotsPrice, setDotPrice] = useState([]);
+  const [maticsPrice, setMaticsPrice] = useState([]);
+  const [daisPrice, setDaisPrice] = useState([]);
+
+  /* useEffect(() => {
+    getData()
+    .then((data) => {
+      console.log(data);
+    });
+  }); */
 
   //const loggedIn
   async function getData() {
@@ -48,6 +63,15 @@ export default function App() {
           setCurrencies(coins);
           setBtcsPrice(coins[0].price);
           setToilethsPrice(coins[1].price);
+          setBnbsPrice(coins[3].price);
+          setXrpeessPrice(coins[4].price);
+          setAdasPrice(coins[6].price);
+          setSolsPrice(coins[7].price);
+          setDogesPrice(coins[8].price);
+          setDotsPrice(coins[9].price);
+          setMaticsPrice(coins[10].price);
+          setDaisPrice(coins[11].price);
+
           console.log(`here is btcsPrice:${btcsPrice}`);
           console.log(`here is toileths price :${toilethsPrice}`);
 
