@@ -103,6 +103,7 @@
   border: 2px solid #1c6ea4;
   width: 16rem;
   height: 16rem;
+  box-shadow: 3px 3px 10px 10px #2c3f6d;
 }
 .Liquidations {
   padding: 10px;
@@ -117,6 +118,7 @@
   border: 3px solid #1d5ab9;
   height: 16rem;
   border: 3px groove #1c6ea4;
+  border-radius: 6px;
   box-shadow: 3px 3px 15px 12px #000000;
   width: 100;
   border-color: coral;
