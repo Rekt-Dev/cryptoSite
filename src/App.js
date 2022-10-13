@@ -28,6 +28,8 @@ export default function App() {
   const [dotsPrice, setDotsPrice] = useState([]);
   const [maticsPrice, setMaticsPrice] = useState([]);
   const [daisPrice, setDaisPrice] = useState([]);
+
+  // this is  for running the same getData but for the first time, (i.e component did mount)
   useEffect(() => {
     const oneTimer = setTimeout(() => {
       getData();
