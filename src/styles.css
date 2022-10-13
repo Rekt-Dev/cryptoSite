@@ -111,6 +111,7 @@
   border: 2px solid #1c6ea4;
   height: 16rem;
   width: 16rem;
+  box-shadow: 3px 3px 15px 12px #000000;
 }
 .Charts {
   padding: 10px;
@@ -142,6 +143,7 @@
   border: 2px solid #1c6ea4;
   height: 7rem;
   width: 25rem;
+  box-shadow: 3px 3px 10px 10px #2c3f6d;
 }
 .Goi {
   padding: 10px;
@@ -216,4 +218,5 @@
   height: 4rem;
   width: 5rem;
   font-size: 16px;
+  box-shadow: 3px 3px 10px 10px #2c3f6d;
 }
