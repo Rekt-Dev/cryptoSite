@@ -34,8 +34,8 @@ export const FinancialChart = () => {
     (d) => new Date(d.date)
   );
   const height = 300;
-  const width = 500;
-  const margin = { left: 0, right: 48, top: 0, bottom: 24 };
+  const width = 600;
+  const margin = { left: 40, right: 0, top: 50, bottom: 0 };
 
   const ema12 = ema()
     .id(1)

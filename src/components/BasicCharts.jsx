@@ -93,21 +93,7 @@ export const BasicCharts = (props) => {
         <div>
           <FinancialChart />
         </div>
-        <div className="flexRow">
-          <MiniChart />
-        </div>
-        {/* <div className="flexRow">
-          <MiniChart />
-        </div>
-        <div className="flexRow">
-          <MiniChart />
-        </div>
-        <div className="flexRow">
-          <MiniChart />
-        </div>
-        <div className="flexRow">
-          <MiniChart />
-        </div> */}
+        <div className="flexRow"></div>
       </div>
       <div></div>
       <Button onClick={props.function}> manual price update </Button>
