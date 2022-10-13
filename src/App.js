@@ -28,8 +28,10 @@ export default function App() {
   const [dotsPrice, setDotsPrice] = useState([]);
   const [maticsPrice, setMaticsPrice] = useState([]);
   const [daisPrice, setDaisPrice] = useState([]);
-
-  //runs every 85 seconds
+  setTimeout(() => {
+    getData();
+  });
+  //uesEffect runs every 85 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       getData();
@@ -108,9 +110,7 @@ export default function App() {
           </div>
           <Mcap />
         </div>
-        <div className="">
-          <br />
-        </div>
+
         <div
           onClick={() => console.log("i was clicked ticker names")}
           className="tickerNames"
