@@ -71,7 +71,7 @@ export default function App() {
           setBtcsPrice(coins[0].price);
           setToilethsPrice(coins[1].price);
           setBnbsPrice(coins[4].price);
-          setXrpeessPrice(coins[5].price);
+          setXrpeessPrice(coins[5].price.toFixed(2));
           setAdasPrice(coins[7].price);
           setSolsPrice(coins[8].price);
           setDogesPrice(coins[9].price);
