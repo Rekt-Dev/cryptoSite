@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-
+import { Mcap } from "../components/Mcap";
 export const BasicCharts = (props) => {
   var myDataSource = {
     chart: {
@@ -89,7 +89,13 @@ export const BasicCharts = (props) => {
       <div className="">
         <h3> Basic Charts</h3>
       </div>
-
+      <div>
+        <Mcap />
+        <Mcap />
+        <Mcap />
+        <Mcap />
+        <Mcap />
+      </div>
       <div>
         <div>
           BTCs price {Number(props.coins[0]).toFixed(0)} <br />
@@ -121,7 +127,7 @@ export const BasicCharts = (props) => {
           dais price {Number(props.coins[9]).toFixed(4)}
         </div>
       </div>
-      <Button onClick={props.function}>bitcoins price update </Button>
+      <Button onClick={props.function}> manual price update </Button>
       <div id="chart-container"></div>
     </div>
   );
