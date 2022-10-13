@@ -141,7 +141,7 @@ export default function App() {
             onClick={() => console.log("i was clicked basic charts")}
             className="Charts flexRow"
           >
-            <BasicCharts />
+            <BasicCharts state={bnbsPrice} />
           </div>
           <div className="flexColumn">
             <LivePrices />

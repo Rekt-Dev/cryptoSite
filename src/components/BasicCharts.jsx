@@ -1,5 +1,5 @@
 import React from "react";
-export const BasicCharts = () => {
+export const BasicCharts = (props) => {
   var myDataSource = {
     chart: {
       caption: "Top 10 iOS Apps - July 2017",
@@ -84,14 +84,16 @@ export const BasicCharts = () => {
 
   return (
     <div>
-      <div className="">Basic Charts</div>
+      <div className="">
+        <h3> Basic Charts</h3>
+      </div>
 
       <div>
         <div>
           This is beh teh sehs price{} <br />
           This is toileths price{}
           <br />
-          This is bnbs price{}
+          This is bnbs price{props.state}
           <br />
           This is xrpees price{}
           <br />
