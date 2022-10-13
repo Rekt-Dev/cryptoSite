@@ -80,14 +80,14 @@ export default function App() {
           console.log(
             "success u toilet",
             `here is btcs price: ${currencies[0]}`,
-            `here is toileths price: ${currencies[1]}``here is bnbs price: ${currencies[0]}`,
-            `here is xrpees price: ${currencies[0]}`,
-            `here is adas price: ${currencies[0]}`,
-            `here is sols price: ${currencies[0]}`,
-            `here is doges price: ${currencies[0]}`,
-            `here is dots price: ${currencies[0]}`,
-            `here is matics price: ${currencies[0]}`,
-            `here is dais price: ${currencies[0]}`
+            `here is toileths price: ${currencies[1]}``here is bnbs price: ${currencies[3]}`,
+            `here is xrpees price: ${currencies[4]}`,
+            `here is adas price: ${currencies[6]}`,
+            `here is sols price: ${currencies[7]}`,
+            `here is doges price: ${currencies[8]}`,
+            `here is dots price: ${currencies[9]}`,
+            `here is matics price: ${currencies[10]}`,
+            `here is dais price: ${currencies[11]}`
           );
 
           return currencies;
