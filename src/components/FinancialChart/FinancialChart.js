@@ -172,7 +172,7 @@ export const FinancialChart = () => {
         <ZoomButtons />
         <OHLCTooltip origin={[8, 16]} />
       </Chart>
-      {/* <Chart
+      <Chart
         id={4}
         height={elderRayHeight}
         yExtents={[0, elder.accessor()]}
@@ -200,7 +200,7 @@ export const FinancialChart = () => {
           }
           origin={[8, 16]}
         />
-      </Chart> */}
+      </Chart>
       <CrossHairCursor />
     </ChartCanvas>
   );
