@@ -28,14 +28,17 @@ export default function App() {
   const [dotsPrice, setDotsPrice] = useState([]);
   const [maticsPrice, setMaticsPrice] = useState([]);
   const [daisPrice, setDaisPrice] = useState([]);
-  setTimeout(() => {
-    getData();
-  });
+  useEffect(() => {
+    const oneTimer = setTimeout(() => {
+      getData();
+    }, 1000);
+    return () => clearTimeout(oneTimer);
+  }, []);
   //uesEffect runs every 85 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       getData();
-    }, 180000);
+    }, 85000);
     return () => clearInterval(interval);
   });
 
