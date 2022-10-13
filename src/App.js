@@ -65,7 +65,7 @@ export default function App() {
           setToilethsPrice(coins[1].price);
           setBnbsPrice(coins[4].price);
           setXrpeessPrice(coins[5].price);
-          setAdasPrice(coins[6].price);
+          setAdasPrice(coins[7].price);
           setSolsPrice(coins[7].price);
           setDogesPrice(coins[9].price);
           setDotsPrice(coins[10].price);
