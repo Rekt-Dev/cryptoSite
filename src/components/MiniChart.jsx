@@ -5,7 +5,7 @@ export const MiniChart = () => {
       onClick={() => {
         console.log("minichart clicked ");
       }}
-      className="Mcap"
+      className="MiniChart"
     >
       <h2> miniChart Component</h2>
       <div></div>

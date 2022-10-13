@@ -86,9 +86,7 @@ export const BasicCharts = (props) => {
 
   return (
     <div>
-      <div className="">
-        <h3> Basic Charts</h3>
-      </div>
+      <div className=""></div>
       <div className="flexColumn">
         <div className="flexRow">
           <MiniChart />
