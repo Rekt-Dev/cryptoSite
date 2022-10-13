@@ -141,7 +141,20 @@ export default function App() {
             onClick={() => console.log("i was clicked basic charts")}
             className="Charts flexRow"
           >
-            <BasicCharts state={bnbsPrice} />
+            <BasicCharts
+              state={[
+                btcsPrice,
+                toilethsPrice,
+                bnbsPrice,
+                xrpeesPrice,
+                adasPrice,
+                solsPrice,
+                dogesPrice,
+                dotsPrice,
+                maticsPrice,
+                daisPrice
+              ]}
+            />
           </div>
           <div className="flexColumn">
             <LivePrices />

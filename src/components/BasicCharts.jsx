@@ -90,24 +90,24 @@ export const BasicCharts = (props) => {
 
       <div>
         <div>
-          This is beh teh sehs price{} <br />
-          This is toileths price{}
+          This is beh teh sehs price{props.state[0]} <br />
+          This is toileths price{props.state[1]}
           <br />
-          This is bnbs price{props.state}
+          This is bnbs price {props.state[2]}
           <br />
-          This is xrpees price{}
+          This is xrpees price{props.state[3]}
           <br />
-          This is adas price{}
+          This is adas price{props.state[4]}
           <br />
-          This is sols price{}
+          This is sols price{props.state[5]}
           <br />
-          This is doges price{}
+          This is doges price{props.state[6]}
           <br />
-          This is dots price{}
+          This is dots price{props.state[7]}
           <br />
-          This is matics price{}
+          This is matics price{props.state[8]}
           <br />
-          This is dais price{}
+          This is dais price{props.state[9]}
         </div>
       </div>
 
