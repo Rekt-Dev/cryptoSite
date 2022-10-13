@@ -68,7 +68,7 @@
   border: 2px solid #1c6ea4;
   display: flex;
   flex-direction: row;
-  width: 58rem;
+  width: 75rem;
   height: 7rem;
   border-radius: 10px;
   font-size: 16px;
@@ -212,6 +212,6 @@
   border: 2px solid #1c6ea4;
   border-radius: 10px;
   height: 4rem;
-  width: 3rem;
+  width: 5rem;
   font-size: 16px;
 }
