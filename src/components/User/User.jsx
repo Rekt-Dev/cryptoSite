@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "./LoginForm.module.css";
+import Button from "react-bootstrap/Button";
+
 //import styles1 from "../styles.css";
 
 const User = (props) => {
@@ -23,7 +25,7 @@ const User = (props) => {
   };
 
   return (
-    <div className={"Winlose"}>
+    <div className="User">
       <form className={styles.form} onSubmit={onSubmitForm}>
         <div className={styles.formGroup}>
           <label className={styles.formLabel}>Email</label>
@@ -58,10 +60,8 @@ const User = (props) => {
             onChange={onUpdateField}
           />
         </div>
-        <div className={styles.formActions}>
-          <button className={styles.formSubmitBtn} type="submit">
-            Login
-          </button>
+        <div>
+          <Button type="submit">Login</Button>
         </div>
       </form>
     </div>

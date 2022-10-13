@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
+
 export const BasicCharts = (props) => {
   var myDataSource = {
     chart: {
@@ -119,7 +121,7 @@ export const BasicCharts = (props) => {
           dais price {Number(props.coins[9]).toFixed(4)}
         </div>
       </div>
-      <button onClick={props.function}>bitcoins price update </button>
+      <Button onClick={props.function}>bitcoins price update </Button>
       <div id="chart-container"></div>
     </div>
   );

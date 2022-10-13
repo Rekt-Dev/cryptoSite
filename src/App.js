@@ -106,6 +106,7 @@ export default function App() {
               ]}
             />
           </div>
+          <Mcap />
         </div>
         <div className="">
           <br />
