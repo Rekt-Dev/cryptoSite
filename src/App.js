@@ -20,9 +20,9 @@ export default function App() {
   const [currencies, setCurrencies] = useState([]);
   const [btcsPrice, setBtcsPrice] = useState(1000000);
   const [toilethsPrice, setToilethsPrice] = useState(-1500);
-  const [bnbsPrice, setBnbsPrice] = useState([]);
-  const [xrpeesPrice, setXrpeessPrice] = useState([]);
-  const [adasPrice, setAdasPrice] = useState([]);
+  const [bnbsPrice, setBnbsPrice] = useState([0]);
+  const [xrpeesPrice, setXrpeessPrice] = useState([-3]);
+  const [adasPrice, setAdasPrice] = useState([0]);
   const [solsPrice, setSolsPrice] = useState([]);
   const [dogesPrice, setDogesPrice] = useState([]);
   const [dotsPrice, setDotsPrice] = useState([]);
@@ -63,14 +63,14 @@ export default function App() {
           setCurrencies(coins);
           setBtcsPrice(coins[0].price);
           setToilethsPrice(coins[1].price);
-          setBnbsPrice(coins[3].price);
-          setXrpeessPrice(coins[4].price);
+          setBnbsPrice(coins[4].price);
+          setXrpeessPrice(coins[5].price);
           setAdasPrice(coins[6].price);
           setSolsPrice(coins[7].price);
-          setDogesPrice(coins[8].price);
-          setDotsPrice(coins[9].price);
-          setMaticsPrice(coins[10].price);
-          setDaisPrice(coins[11].price);
+          setDogesPrice(coins[9].price);
+          setDotsPrice(coins[10].price);
+          setMaticsPrice(coins[11].price);
+          setDaisPrice(coins[8].price);
 
           console.log(`here is btcsPrice:${btcsPrice}`);
           console.log(`here is toileths price :${toilethsPrice}`);
@@ -80,14 +80,7 @@ export default function App() {
           console.log(
             "success u toilet",
             `here is btcs price: ${currencies[0]}`,
-            `here is toileths price: ${currencies[1]}``here is bnbs price: ${currencies[3]}`,
-            `here is xrpees price: ${currencies[4]}`,
-            `here is adas price: ${currencies[6]}`,
-            `here is sols price: ${currencies[7]}`,
-            `here is doges price: ${currencies[8]}`,
-            `here is dots price: ${currencies[9]}`,
-            `here is matics price: ${currencies[10]}`,
-            `here is dais price: ${currencies[11]}`
+            `here is toileths price: ${currencies[1]}`
           );
 
           return currencies;
@@ -117,6 +110,22 @@ export default function App() {
           <div>
             This is beh teh sehs price{btcsPrice} <br />
             This is toileths price{toilethsPrice}
+            <br />
+            This is bnbs price{bnbsPrice}
+            <br />
+            This is xrpees price{xrpeesPrice}
+            <br />
+            This is adas price{adasPrice}
+            <br />
+            This is sols price{solsPrice}
+            <br />
+            This is doges price{dogesPrice}
+            <br />
+            This is dots price{dotsPrice}
+            <br />
+            This is matics price{maticsPrice}
+            <br />
+            This is dais price{daisPrice}
           </div>
           <br />
         </div>
