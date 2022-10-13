@@ -25,7 +25,7 @@ export default function App() {
   const [adasPrice, setAdasPrice] = useState([]);
   const [solsPrice, setSolsPrice] = useState([]);
   const [dogesPrice, setDogesPrice] = useState([]);
-  const [dotsPrice, setDotPrice] = useState([]);
+  const [dotsPrice, setDotsPrice] = useState([]);
   const [maticsPrice, setMaticsPrice] = useState([]);
   const [daisPrice, setDaisPrice] = useState([]);
 
@@ -80,7 +80,14 @@ export default function App() {
           console.log(
             "success u toilet",
             `here is btcs price: ${currencies[0]}`,
-            `here is toileths price: ${currencies[1]}`
+            `here is toileths price: ${currencies[1]}``here is bnbs price: ${currencies[0]}`,
+            `here is xrpees price: ${currencies[0]}`,
+            `here is adas price: ${currencies[0]}`,
+            `here is sols price: ${currencies[0]}`,
+            `here is doges price: ${currencies[0]}`,
+            `here is dots price: ${currencies[0]}`,
+            `here is matics price: ${currencies[0]}`,
+            `here is dais price: ${currencies[0]}`
           );
 
           return currencies;
