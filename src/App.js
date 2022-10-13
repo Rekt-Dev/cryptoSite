@@ -2,9 +2,11 @@ import "./styles.css";
 import { useEffect, useState } from "react";
 import User from "./components/User/User";
 import { Tickers } from "./components/Tickers/Tickers.jsx";
-import { Notifs } from "./components/Notifs";
+//import { Notifs } from "./components/Notifs";
 import { Mcap } from "./components/Mcap";
 import { BasicCharts } from "./components/BasicCharts";
+//import { CanvasJs } from "./components/CanvasJs";
+
 //import {Fear} from "./components/Fear"
 //import {Goi} from "./components/Goi"
 import { LivePrices } from "./components/LivePrices";
@@ -29,7 +31,7 @@ export default function App() {
   const [maticsPrice, setMaticsPrice] = useState([]);
   const [daisPrice, setDaisPrice] = useState([]);
 
-  // this is  for running the same getData but for the first time, (i.e component did mount)
+  // this is  for running the same getData but for the first time, (i.e component did mount), the depedencyarray[] is the thing that is making the useEffect trigger only once.coz there are none
   useEffect(() => {
     const oneTimer = setTimeout(() => {
       getData();
@@ -151,6 +153,9 @@ export default function App() {
             <WinLose />
             <Liquidations />
           </div>
+          {/*   <div>
+            <CanvasJs />
+          </div> */}
           <div className="flexColumn">
             <LivePrices />
             <WinLose />
