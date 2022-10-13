@@ -45,6 +45,7 @@ export default function App() {
       "coinrankingdfa125c1105b3ec3b9af03ab2268054ae4a3c06015b4b547";
     const url = "https://api.coinranking.com/v2/coins";
     const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
+
     const queryString = new URLSearchParams({
       mode: `no-cors`,
       "Content-Type": "application/json",
@@ -52,7 +53,7 @@ export default function App() {
       "x-access-token": apiKey,
       search: "Bit"
     });
-    // Add the API key to the querystring
+
     await fetch(`${corsAnywhere}${url}`)
       .then((response) => response.json())
       .then((response) => {
@@ -105,11 +106,8 @@ export default function App() {
               ]}
             />
 
-            <div className="Mcap">
-              <Mcap />
-            </div>
+            <div></div>
           </div>
-          <Notifs />
         </div>
         <div className="">
           <br />
