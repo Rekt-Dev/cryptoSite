@@ -27,9 +27,9 @@ import {
   withDeviceRatio,
   withSize
 } from "react-financial-charts";
-import { initialData } from "./data";
+import { initialData } from "./Data";
 
-const App = () => {
+export const FinancialChart = () => {
   const ScaleProvider = discontinuousTimeScaleProviderBuilder().inputDateAccessor(
     (d) => new Date(d.date)
   );
@@ -205,5 +205,3 @@ const App = () => {
     </ChartCanvas>
   );
 };
-
-ReactDOM.render(<App />, document.getElementById("container"));
