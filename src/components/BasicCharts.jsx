@@ -119,7 +119,7 @@ export const BasicCharts = (props) => {
           dais price {Number(props.state[9]).toFixed(4)}
         </div>
       </div>
-
+      <button onClick={props.function}>bitcoins price update </button>
       <div id="chart-container"></div>
     </div>
   );

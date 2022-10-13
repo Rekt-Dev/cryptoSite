@@ -29,13 +29,7 @@ export default function App() {
   const [maticsPrice, setMaticsPrice] = useState([]);
   const [daisPrice, setDaisPrice] = useState([]);
 
-  /* useEffect(() => {
-    getData()
-    .then((data) => {
-      console.log(data);
-    });
-  }); */
-
+  //runs every 85 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       getData();
@@ -110,7 +104,7 @@ export default function App() {
                 daisPrice
               ]}
             />
-            <button onClick={getData}>bitcoins price update </button>
+
             <div className="Mcap">
               <Mcap />
             </div>
@@ -147,6 +141,7 @@ export default function App() {
                 maticsPrice,
                 daisPrice
               ]}
+              function={getData}
             />
           </div>
           <div className="flexColumn">

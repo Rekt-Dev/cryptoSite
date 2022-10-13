@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 //import App from "./App";
 
 export const Tickers = (props) => {
@@ -9,23 +9,41 @@ export const Tickers = (props) => {
         {Number(props.state[0]).toFixed(0)}{" "}
       </div>
 
-      <div className="tickers-internal justifyCenter">ETH</div>
+      <div className="tickers-internal justifyCenter">
+        toilETH {Number(props.state[1]).toFixed(2)}
+      </div>
 
-      <div className="tickers-internal justifyCenter">USDT</div>
+      <div className="tickers-internal justifyCenter">
+        BNB {Number(props.state[1]).toFixed(2)}
+      </div>
 
-      <div className="tickers-internal justifyCenter">BNB</div>
+      <div className="tickers-internal justifyCenter">
+        XRPee {Number(props.state[1]).toFixed(2)}
+      </div>
 
-      <div className="tickers-internal justifyCenter">XRP</div>
+      <div className="tickers-internal justifyCenter">
+        ADA {Number(props.state[1]).toFixed(2)}
+      </div>
 
-      <div className="tickers-internal justifyCenter">ADA</div>
+      <div className="tickers-internal justifyCenter">
+        SOL {Number(props.state[1]).toFixed(2)}
+      </div>
 
-      <div className="tickers-internal justifyCenter">SOL</div>
+      <div className="tickers-internal justifyCenter">
+        DOGE {Number(props.state[1]).toFixed(2)}
+      </div>
 
-      <div className="tickers-internal justifyCenter">DOGE</div>
+      <div className="tickers-internal justifyCenter">
+        DOT {Number(props.state[1]).toFixed(2)}
+      </div>
 
-      <div className="tickers-internal justifyCenter">9th</div>
+      <div className="tickers-internal justifyCenter">
+        MATIC {Number(props.state[1]).toFixed(2)}
+      </div>
 
-      <div className="tickers-internal justifyCenter">10th</div>
+      <div className="tickers-internal justifyCenter">
+        DAI {Number(props.state[1]).toFixed(2)}
+      </div>
     </div>
   );
 };
