@@ -8,6 +8,7 @@ export const LivePrices = () => {
       className="Liveprices"
     >
       <h2> Live Prices Component</h2>
+      <div></div>
     </div>
   );
 };

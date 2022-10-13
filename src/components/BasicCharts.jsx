@@ -86,7 +86,28 @@ export const BasicCharts = () => {
     <div>
       <div className="">Basic Charts</div>
 
-      <div></div>
+      <div>
+        <div>
+          This is beh teh sehs price{} <br />
+          This is toileths price{}
+          <br />
+          This is bnbs price{}
+          <br />
+          This is xrpees price{}
+          <br />
+          This is adas price{}
+          <br />
+          This is sols price{}
+          <br />
+          This is doges price{}
+          <br />
+          This is dots price{}
+          <br />
+          This is matics price{}
+          <br />
+          This is dais price{}
+        </div>
+      </div>
 
       <div id="chart-container"></div>
     </div>
