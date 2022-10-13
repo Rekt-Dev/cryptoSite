@@ -91,7 +91,7 @@ export default function App() {
           <Header />
           <div className="flexRow">
             <Tickers
-              state={[
+              coins={[
                 btcsPrice,
                 toilethsPrice,
                 bnbsPrice,
@@ -129,7 +129,7 @@ export default function App() {
             className="Charts flexRow"
           >
             <BasicCharts
-              state={[
+              coins={[
                 btcsPrice,
                 toilethsPrice,
                 bnbsPrice,

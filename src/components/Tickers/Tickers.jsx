@@ -6,43 +6,43 @@ export const Tickers = (props) => {
     <div className="flexRow tickerNames">
       <div className="tickers-internal">
         BTC <br />
-        {Number(props.state[0]).toFixed(0)}{" "}
+        {Number(props.coins[0]).toFixed(0)}{" "}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        toilETH {Number(props.state[1]).toFixed(2)}
+        toilETH {Number(props.coins[1]).toFixed(2)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        BNB {Number(props.state[2]).toFixed(3)}
+        BNB {Number(props.coins[2]).toFixed(3)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        XRPee {Number(props.state[3]).toFixed(4)}
+        XRPee {Number(props.coins[3]).toFixed(4)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        ADA {Number(props.state[4]).toFixed(4)}
+        ADA {Number(props.coins[4]).toFixed(4)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        SOL {Number(props.state[5]).toFixed(3)}
+        SOL {Number(props.coins[5]).toFixed(3)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        DOGE {Number(props.state[6]).toFixed(4)}
+        DOGE {Number(props.coins[6]).toFixed(4)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        DOT {Number(props.state[7]).toFixed(3)}
+        DOT {Number(props.coins[7]).toFixed(3)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        MATIC {Number(props.state[8]).toFixed(4)}
+        MATIC {Number(props.coins[8]).toFixed(4)}
       </div>
 
       <div className="tickers-internal justifyCenter">
-        DAI {Number(props.state[9]).toFixed(3)}
+        DAI {Number(props.coins[9]).toFixed(3)}
       </div>
     </div>
   );

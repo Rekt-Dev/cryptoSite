@@ -90,33 +90,33 @@ export const BasicCharts = (props) => {
 
       <div>
         <div>
-          BTCs price {Number(props.state[0]).toFixed(0)} <br />
+          BTCs price {Number(props.coins[0]).toFixed(0)} <br />
           <br />
-          Toileths price {Number(props.state[1]).toFixed(2)}
-          <br />
-          <br />
-          Bnbs price {Number(props.state[2]).toFixed(3)}
+          Toileths price {Number(props.coins[1]).toFixed(2)}
           <br />
           <br />
-          xrpees price {Number(props.state[3]).toFixed(4)}
+          Bnbs price {Number(props.coins[2]).toFixed(3)}
           <br />
           <br />
-          adas price {Number(props.state[4]).toFixed(4)}
+          xrpees price {Number(props.coins[3]).toFixed(4)}
           <br />
           <br />
-          sols price {Number(props.state[5]).toFixed(4)}
+          adas price {Number(props.coins[4]).toFixed(4)}
           <br />
           <br />
-          doges price {Number(props.state[6]).toFixed(4)}
+          sols price {Number(props.coins[5]).toFixed(4)}
           <br />
           <br />
-          dots price {Number(props.state[7]).toFixed(4)}
+          doges price {Number(props.coins[6]).toFixed(4)}
           <br />
           <br />
-          matics price {Number(props.state[8]).toFixed(4)}
+          dots price {Number(props.coins[7]).toFixed(4)}
           <br />
           <br />
-          dais price {Number(props.state[9]).toFixed(4)}
+          matics price {Number(props.coins[8]).toFixed(4)}
+          <br />
+          <br />
+          dais price {Number(props.coins[9]).toFixed(4)}
         </div>
       </div>
       <button onClick={props.function}>bitcoins price update </button>
