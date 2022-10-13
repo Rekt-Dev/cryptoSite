@@ -20,23 +20,23 @@ export const Tickers = () => {
     <div className="flexRow tickerNames">
       <div className="tickers-internal justifyCenter">BTC </div>
 
-      <div className="tickers-internal ">ETH</div>
+      <div className="tickers-internal justifyCenter">ETH</div>
 
-      <div className="tickers-internal">USDT</div>
+      <div className="tickers-internal justifyCenter">USDT</div>
 
-      <div className="tickers-internal">BNB</div>
+      <div className="tickers-internal justifyCenter">BNB</div>
 
-      <div className="tickers-internal">XRP</div>
+      <div className="tickers-internal justifyCenter">XRP</div>
 
-      <div className="tickers-internal">ADA</div>
+      <div className="tickers-internal justifyCenter">ADA</div>
 
-      <div className="tickers-internal">SOL</div>
+      <div className="tickers-internal justifyCenter">SOL</div>
 
-      <div className="tickers-internal">DOGE</div>
+      <div className="tickers-internal justifyCenter">DOGE</div>
 
-      <div className="tickers-internal">9th</div>
+      <div className="tickers-internal justifyCenter">9th</div>
 
-      <div className="tickers-internal">10th</div>
+      <div className="tickers-internal justifyCenter">10th</div>
     </div>
   );
 };
