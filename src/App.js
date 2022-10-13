@@ -77,12 +77,6 @@ export default function App() {
 
           console.log(currencies);
 
-          console.log(
-            "success u toilet",
-            `here is btcs price: ${currencies[0]}`,
-            `here is toileths price: ${currencies[1]}`
-          );
-
           return currencies;
         }
       })
