@@ -36,6 +36,13 @@ export default function App() {
     });
   }); */
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      getData();
+    }, 10000);
+    return () => clearInterval(interval);
+  });
+
   //const loggedIn
   async function getData() {
     console.log(`getData activ8d`);
@@ -66,14 +73,11 @@ export default function App() {
           setBnbsPrice(coins[4].price);
           setXrpeessPrice(coins[5].price);
           setAdasPrice(coins[7].price);
-          setSolsPrice(coins[7].price);
+          setSolsPrice(coins[8].price);
           setDogesPrice(coins[9].price);
           setDotsPrice(coins[10].price);
           setMaticsPrice(coins[11].price);
           setDaisPrice(coins[8].price);
-
-          console.log(`here is btcsPrice:${btcsPrice}`);
-          console.log(`here is toileths price :${toilethsPrice}`);
 
           console.log(currencies);
 
