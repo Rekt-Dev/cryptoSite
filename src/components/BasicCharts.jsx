@@ -95,11 +95,9 @@ export const BasicCharts = (props) => {
       </div>
 
       <div id="chart-container">
-        <FinancialChart />
       </div>
       <div>
         {" "}
-        <FinancialChart />
       </div>
     </div>
   );

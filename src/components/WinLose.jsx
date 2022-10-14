@@ -1,8 +1,10 @@
-import React from "react"
-export const WinLose=()=>{
-    
-    return(<div className="Winlose">
-        Winners/Losers Component
+import React from "react";
+import { FinancialChart } from "./FinancialChart/FinancialChart";
+export const WinLose = () => {
+  return (
+    <div className="Winlose">
+      Winners/Losers Component
+      <FinancialChart />
     </div>
-    )
-}
+  );
+};
