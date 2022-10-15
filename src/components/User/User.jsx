@@ -61,7 +61,7 @@ const User = (props) => {
           />
         </div>
         <div>
-          <Button type="submit">Login</Button>
+          <Button type="submit">Register</Button>
         </div>
       </form>
     </div>
