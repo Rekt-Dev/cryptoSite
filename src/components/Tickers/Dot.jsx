@@ -1,9 +1,8 @@
 import React from "react";
-export const Fear = () => {
+export const Dot = () => {
   return (
     <div className={"Fear"}>
-      Fear n Greed Component
-      <img />
+      Dot <img />
     </div>
   );
 };

@@ -1,9 +1,4 @@
 import React from "react";
-export const Fear = () => {
-  return (
-    <div className={"Fear"}>
-      Fear n Greed Component
-      <img />
-    </div>
-  );
+export const Xrp = () => {
+  return <div className={"Fear"}>XRP </div>;
 };
