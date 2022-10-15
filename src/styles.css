@@ -145,6 +145,15 @@ fon
 
 
 }
+.Card{
+  border: 5px solid rgb(32, 216, 87);
+  height: 30%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 6px;
+}
 
 .wrapper {
   width: fit-content;
