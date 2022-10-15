@@ -43,7 +43,7 @@ export const Tickers = (props) => {
       </div>
 
       <div className="tickers-internal justifyCenter Dai">
-        DAI {Number(props.coins[9]).toFixed(3)}
+        DAI {Number(props.coins[9]).toFixed(6)}
       </div>
     </div>
   );
