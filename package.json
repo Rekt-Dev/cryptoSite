@@ -9,7 +9,6 @@
   "main": "src/index.js",
   "dependencies": {
     "axios": "^0.27.2",
-    "data.js": "0.12.11",
     "react": "18.2.0",
     "react-bootstrap": "2.5.0",
     "react-chart-canvas": "0.1.7",

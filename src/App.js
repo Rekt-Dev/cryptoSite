@@ -45,7 +45,7 @@ export default function App() {
   useEffect(() => {
     const oneTimer = setTimeout(() => {
       getData();
-      setJsonData(Array[0]);
+      setJsonData();
       console.log(`this is jsonData from default useeffect ${jsonData}`);
     }, 1000);
     return () => clearTimeout(oneTimer);
@@ -54,7 +54,7 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       getData();
-      setJsonData(Array[0]);
+      setJsonData();
 
       console.log(`this is jsonData from 85 sec useeffect ${jsonData}`);
     }, 85000);

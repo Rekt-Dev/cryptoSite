@@ -7,12 +7,12 @@ import {
   useNavigate
 } from "react-router-dom";
 export const PriceList = (props) => {
-  const navigate = useNavigate();
   return (
     <div>
       <div className="PriceList">
         <h1>Price list component </h1>
         <div>
+          {props.coins}
           {/*  {jsonData.data
             ? jsonData.data.map((artWork, index) => (
                 <Card key={index} item={artWork} />
