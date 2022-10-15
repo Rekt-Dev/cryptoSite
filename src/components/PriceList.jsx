@@ -42,13 +42,14 @@ export const PriceList = (props) => {
         console.error(error);
       });
   }
+  //this uesEffect runs 1 time after 1 sec.
   useEffect(() => {
     const oneTimer = setTimeout(() => {
       getData();
     }, 1000);
     return () => clearTimeout(oneTimer);
   }, []);
-  //uesEffect runs every 85 seconds
+  //this uesEffect runs every 85 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       getData();
@@ -61,16 +62,23 @@ export const PriceList = (props) => {
         <h1>Price list component </h1>
         <div>
           <table>
-            <tr>
-              <th>1</th>
-              <th>2</th>
-              <th>3</th>
-              <th>4</th>
-              <th>4</th>
-              <th>4</th>
-              <th>4</th>
-              <th>sort by</th>
-            </tr>
+            <thead>
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>4</th>
+                <th>4</th>
+                <th>4</th>
+                <th>sort by</th>
+              </tr>
+            </thead>
+            <tbody>
+              {coins
+                ? coins.map((coin) => <div key={coins.id} coins={coins} />)
+                : "No data to show"}
+            </tbody>
           </table>
         </div>
         <div>
