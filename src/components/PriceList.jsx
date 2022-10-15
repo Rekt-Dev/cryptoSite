@@ -9,7 +9,6 @@ import {
 
 export const PriceList = (props) => {
   const [coins, setCoins] = useState();
-  const [currencies, setCurrencies] = useState();
   async function getData() {
     let d = new Date();
     console.log(`getData activ8d @ ${d.toString()} `);
@@ -31,11 +30,10 @@ export const PriceList = (props) => {
       .then((response) => {
         if (response.status === "success") {
           console.log("RESPONSE SUCCESS !!!");
-          let coins = response.data.coins;
+          let coinz = response.data.coins;
 
           console.log(`btcs price:  ${coins[0].price}`);
-          setCurrencies(coins);
-          setCoins(currencies);
+          setCoins(coinz);
         }
       })
       .catch((error) => {
@@ -61,9 +59,12 @@ export const PriceList = (props) => {
       <div className="PriceList">
         <h1>Price list component </h1>
         <div>
-          <div>   {coins
-                ? coins.map((coin, index) => <div key={index} coin={coin} />)
-                : "No data to show,go away"}</div>
+          <div>
+            {" "}
+            {coins
+              ? coins.map((coin, index) => <div key={index} coin={coin} />)
+              : "No data to show,go away"}
+          </div>
           <table>
             <thead>
               <tr>
