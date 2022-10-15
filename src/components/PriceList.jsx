@@ -6,6 +6,7 @@ export const PriceList = () => {
     <div>
       <div className="PriceList">
         <h1>Price list component </h1>
+        <div></div>
       </div>
     </div>
   );
