@@ -5,7 +5,12 @@ import { Swiper } from "react-id-swiper";
 import { Tickers } from "./components/Tickers/Tickers.jsx";
 import { Goi } from "./components/Goi";
 import { BestPerformers } from "./components/BestPerformers";
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate
+} from "react-router-dom";
 /* import { FinancialChart } from "../components/FinancialChart/FinancialChart";
  */
 //import { Notifs } from "./components/Notifs";
@@ -21,6 +26,8 @@ import { News } from "./components/News.jsx";
 //import {query} from "./services/fetch"
 //import cmc from "./services/cmc";
 export default function App() {
+  const [jsonData, setJsonData] = useState([]);
+
   const [currencies, setCurrencies] = useState([]);
   const [btcsPrice, setBtcsPrice] = useState(1000000);
   const [toilethsPrice, setToilethsPrice] = useState(-1500);
@@ -33,10 +40,13 @@ export default function App() {
   const [maticsPrice, setMaticsPrice] = useState([]);
   const [daisPrice, setDaisPrice] = useState([]);
 
+  const navigate = useNavigate();
   // this is  for running the same getData but for the first time, (i.e component did mount), the depedencyarray[] is the thing that is making the useEffect trigger only once.coz there are none
   useEffect(() => {
     const oneTimer = setTimeout(() => {
       getData();
+      setJsonData(Array[0]);
+      console.log(`this is jsonData from default useeffect ${jsonData}`);
     }, 1000);
     return () => clearTimeout(oneTimer);
   }, []);
@@ -44,6 +54,9 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       getData();
+      setJsonData(Array[0]);
+
+      console.log(`this is jsonData from 85 sec useeffect ${jsonData}`);
     }, 85000);
     return () => clearInterval(interval);
   });
@@ -160,7 +173,9 @@ export default function App() {
             <CanvasJs />
           </div> */}
           <div className="flexColumn">
-            <LivePrices />
+            <div onClick={() => navigate(`pricelist`)}>
+              <LivePrices />
+            </div>
             <WinLose />
             <Liquidations />
           </div>
