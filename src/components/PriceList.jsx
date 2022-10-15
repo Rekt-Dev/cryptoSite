@@ -6,6 +6,7 @@ import {
   Route,
   useNavigate
 } from "react-router-dom";
+
 export const PriceList = (props) => {
   const [coins, setCoins] = useState();
   const [currencies, setCurrencies] = useState();
@@ -35,7 +36,7 @@ export const PriceList = (props) => {
 
           console.log(`btcs price:  ${coins[0].price}`);
           setCurrencies(coins);
-          setCoins([coins[0].name]);
+          setCoins(currencies);
         }
       })
       .catch((error) => {
@@ -64,8 +65,8 @@ export const PriceList = (props) => {
           <table>
             <thead>
               <tr>
-                <th>1</th>
-                <th>2</th>
+                <th>{coins ? {coins[0].name}   }</th>
+                <th>{coins[0].price}</th>
                 <th>3</th>
                 <th>4</th>
                 <th>4</th>
@@ -83,6 +84,7 @@ export const PriceList = (props) => {
         </div>
         <div>
           coins: {coins}
+
           {/*  {jsonData.data
             ? jsonData.data.map((artWork, index) => (
                 <Card key={index} item={artWork} />
