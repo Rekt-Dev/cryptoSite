@@ -1,10 +1,11 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   display: flex;
   margin: 2rem auto;
   padding: 0 2rem;
+  font-family: "Times New Roman", Times, serif;
 }
 .form {
   max-width: 30rem;
@@ -100,6 +101,15 @@
   font-size: 10px;
 }
 .Winlose {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+  width: 16rem;
+  height: 16rem;
+  box-shadow: 3px 3px 10px 10px #2c3f6d;
+}
+
+.Goi {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;

@@ -2,6 +2,8 @@ import "./styles.css";
 import { useEffect, useState } from "react";
 import User from "./components/User/User";
 import { Tickers } from "./components/Tickers/Tickers.jsx";
+import { Goi } from "./components/Goi";
+
 //import { Notifs } from "./components/Notifs";
 import { Mcap } from "./components/Mcap";
 import { BasicCharts } from "./components/BasicCharts";
@@ -150,7 +152,7 @@ export default function App() {
           </div>
           <div className="flexColumn">
             <LivePrices />
-            <WinLose />
+            <Goi />
             <Liquidations />
           </div>
           {/*   <div>

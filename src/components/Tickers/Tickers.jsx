@@ -6,7 +6,7 @@ export const Tickers = (props) => {
     <div className="flexRow tickerNames Header">
       <div className="tickers-internal Btc">
         BTC <br />
-        {Number(props.coins[0]).toFixed(0)}{" "}
+        {Number(props.coins[0]).toFixed(0)}
       </div>
 
       <div className="tickers-internal justifyCenter Eth">
