@@ -152,7 +152,7 @@ export default function App() {
           </div>
           <div className="flexColumn">
             <LivePrices />
-            <Goi />
+            <WinLose />
             <Liquidations />
           </div>
           {/*   <div>
