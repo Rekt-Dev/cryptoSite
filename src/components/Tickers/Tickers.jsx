@@ -10,6 +10,7 @@ export const Tickers = (props) => {
       </div>
 
       <div className="tickers-internal justifyCenter Eth">
+        ETH <br />
         {Number(props.coins[1]).toFixed(2)}
       </div>
 
