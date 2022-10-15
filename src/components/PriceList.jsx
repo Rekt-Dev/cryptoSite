@@ -61,6 +61,9 @@ export const PriceList = (props) => {
       <div className="PriceList">
         <h1>Price list component </h1>
         <div>
+          <div>   {coins
+                ? coins.map((coin, index) => <div key={index} coin={coin} />)
+                : "No data to show,go away"}</div>
           <table>
             <thead>
               <tr>
