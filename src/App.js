@@ -126,8 +126,7 @@ export default function App() {
           className="tickerNames"
         ></div>
         <div id="wrapper-column" className="flexRow">
-          <div className="flexColumn">
-            <div></div>
+          <div className="flexColumn justifyCenter">
             <User />
             <WinLose />
             <Liquidations />

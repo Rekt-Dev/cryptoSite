@@ -2,6 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { MiniChart } from "../components/MiniChart";
 import { FinancialChart } from "../components/FinancialChart/FinancialChart";
+import { Swiper } from "../components/Swiper";
 
 export const BasicCharts = (props) => {
   var myDataSource = {
@@ -93,7 +94,9 @@ export const BasicCharts = (props) => {
         <div></div>
       </div>
 
-      <div id="chart-container"></div>
+      <div id="chart-container">
+        <Swiper />
+      </div>
       <div></div>
     </div>
   );
