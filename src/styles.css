@@ -206,6 +206,8 @@
 .tickerNames {
   margin: 10px;
   padding: 10px;
+  background-image: url("https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=023");
+  background-size: 12px;
 }
 
 .News {
@@ -231,4 +233,5 @@
   font-size: 16px;
   box-shadow: 9px 9px 10px 10px #03000f;
   font-size: 1rem;
+  background-image: url("https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=023");
 }
