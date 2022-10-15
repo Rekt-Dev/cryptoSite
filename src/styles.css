@@ -226,8 +226,9 @@
   margin: 8px;
   border: 2px solid #1c6ea4;
   border-radius: 10px;
-  height: 4rem;
+  height: 6rem;
   width: 5rem;
   font-size: 16px;
   box-shadow: 9px 9px 10px 10px #03000f;
+  font-size: 1rem;
 }
