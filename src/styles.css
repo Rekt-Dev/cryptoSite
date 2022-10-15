@@ -196,7 +196,8 @@ fon
   text-align: center;
   border-radius: 3rem;
   margin: 12px;
-  color:white
+  color:white;
+  padding:2px;
 }
 
 .flexRow {
@@ -303,6 +304,7 @@ fon
   margin: 10px;
   padding: 10px;
   background-size: 12px;
+
 }
 
 .News {
@@ -328,4 +330,5 @@ fon
   font-size: 16px;
   box-shadow: 9px 9px 10px 10px #03000f;
   font-size: 1rem;
+  
 }
