@@ -2,7 +2,6 @@ import "./styles.css";
 import { useEffect, useState } from "react";
 import User from "./components/User/User";
 import { Swiper } from "react-id-swiper";
-import { Sswiper } from "./components/Sswiper";
 import { Tickers } from "./components/Tickers/Tickers.jsx";
 import { Goi } from "./components/Goi";
 import { BestPerformers } from "./components/BestPerformers";
