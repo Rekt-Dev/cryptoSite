@@ -140,6 +140,9 @@ fon
   box-shadow: 3px 3px 15px 12px #000000;
   width: 100;
   border-color: coral;
+  align-items: left;
+  justify-content: left;
+
 }
 
 .wrapper {
@@ -183,6 +186,7 @@ fon
   border: 2px solid #1c6ea4;
   width: 40rem;
   height: 53rem;
+
 }
 
 .Header {
@@ -193,7 +197,6 @@ fon
   text-shadow: 2px 4px 4px #1c6ea4;
   text-align: center;
   border-radius: 3rem;
-  justify-content: center;
   margin: 12px;
   color:white
 }

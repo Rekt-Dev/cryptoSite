@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import User from "./components/User/User";
 import { Tickers } from "./components/Tickers/Tickers.jsx";
 import { Goi } from "./components/Goi";
-
+/* import { FinancialChart } from "../components/FinancialChart/FinancialChart";
+ */
 //import { Notifs } from "./components/Notifs";
 import { Mcap } from "./components/Mcap";
 import { BasicCharts } from "./components/BasicCharts";
@@ -126,6 +127,7 @@ export default function App() {
         ></div>
         <div id="wrapper-column" className="flexRow">
           <div className="flexColumn">
+            <div></div>
             <User />
             <WinLose />
             <Liquidations />

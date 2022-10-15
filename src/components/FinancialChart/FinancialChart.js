@@ -126,7 +126,7 @@ export const FinancialChart = () => {
         <BarSeries fillStyle={volumeColor} yAccessor={volumeSeries} />
       </Chart>
       <Chart id={3} height={chartHeight} yExtents={candleChartExtents}>
-        <XAxis showGridLines showTickLabel={false} />
+        <XAxis showGridLines showTickLabel={true} />
         <YAxis showGridLines tickFormat={pricesDisplayFormat} />
         <CandlestickSeries />
         <LineSeries yAccessor={ema26.accessor()} strokeStyle={ema26.stroke()} />
@@ -177,7 +177,7 @@ export const FinancialChart = () => {
         height={elderRayHeight}
         yExtents={[0, elder.accessor()]}
         origin={elderRayOrigin}
-        padding={{ top: 8, bottom: 8 }}
+        padding={{ top: 1, bottom: 1 }}
       >
         <XAxis showGridLines gridLinesStrokeStyle="#e0e3eb" />
         <YAxis ticks={4} tickFormat={pricesDisplayFormat} />
