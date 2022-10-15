@@ -35,10 +35,7 @@ export const PriceList = (props) => {
 
           console.log(`btcs price:  ${coins[0].price}`);
           setCurrencies(coins);
-
-          console.log(currencies);
-
-          return currencies;
+          setCoins([coins[0].name]);
         }
       })
       .catch((error) => {
@@ -55,11 +52,6 @@ export const PriceList = (props) => {
   useEffect(() => {
     const interval = setInterval(() => {
       getData();
-      setJsonData();
-
-      console.log(
-        `this is jsonData from 85 sec useeffect in pricelist ${jsonData}`
-      );
     }, 85000);
     return () => clearInterval(interval);
   });
@@ -68,7 +60,21 @@ export const PriceList = (props) => {
       <div className="PriceList">
         <h1>Price list component </h1>
         <div>
-          {coins}
+          <table>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>4</th>
+              <th>4</th>
+              <th>4</th>
+              <th>sort by</th>
+            </tr>
+          </table>
+        </div>
+        <div>
+          coins: {coins}
           {/*  {jsonData.data
             ? jsonData.data.map((artWork, index) => (
                 <Card key={index} item={artWork} />
