@@ -200,6 +200,78 @@
   background-repeat: no-repeat;
   background-size: 1.5rem;
 }
+.Btc {
+  margin: 10px;
+  padding: 10px;
+  background-size: 12px;
+  background-image: url("https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+.Doge {
+  margin: 10px;
+  padding: 10px;
+  background-size: 12px;
+  background-image: url("https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+.Ada {
+  margin: 10px;
+  padding: 10px;
+  background-size: 12px;
+  background-image: url("https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+.Dai {
+  margin: 10px;
+  padding: 10px;
+  background-size: 12px;
+  background-image: url("https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+.Xrp {
+  margin: 10px;
+  padding: 10px;
+  background-size: 12px;
+  background-image: url("https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+.Bnb {
+  margin: 10px;
+  padding: 10px;
+  background-size: 12px;
+  background-image: url("https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+.Sol {
+  margin: 10px;
+  padding: 10px;
+  background-size: 12px;
+  background-image: url("https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+.Matic {
+  margin: 10px;
+  padding: 10px;
+  background-size: 12px;
+  background-image: url("https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+.Dot {
+  margin: 10px;
+  padding: 10px;
+  background-size: 12px;
+  background-image: url("https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
 .inputForm {
   width: 9.5rem;
 }
