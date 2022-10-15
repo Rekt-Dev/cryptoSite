@@ -8,6 +8,7 @@
   background-color:  rgb(30, 30, 30)	; 
   font-smooth: always;
 color:white;
+justify-content: center
 }
 .form {
   max-width: 30rem;
@@ -322,7 +323,7 @@ fon
 
 .tickers-internal {
   padding: 10px;
-  margin: 8px;
+  margin: 5px;
   border: 2px solid #1c6ea4;
   border-radius: 10px;
   height: 6rem;
