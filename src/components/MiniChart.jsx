@@ -10,10 +10,7 @@ export const MiniChart = () => {
       className="MiniChart"
     >
       <h2> miniChart Component</h2>
-      <div>
-        {/*         <FinancialChart />
-         */}{" "}
-      </div>
+      <div></div>
     </div>
   );
 };

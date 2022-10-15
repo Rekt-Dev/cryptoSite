@@ -94,11 +94,8 @@ export const BasicCharts = (props) => {
         <div></div>
       </div>
 
-      <div id="chart-container">
-      </div>
-      <div>
-        {" "}
-      </div>
+      <div id="chart-container"></div>
+      <div></div>
     </div>
   );
 };

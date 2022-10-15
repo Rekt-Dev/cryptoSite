@@ -188,8 +188,8 @@ export const FinancialChart = () => {
           displayFormat={pricesDisplayFormat}
         />
 
-        <ElderRaySeries yAccessor={elder.accessor()} />
-
+        {/*  <ElderRaySeries yAccessor={elder.accessor()} />
+         */}
         <SingleValueTooltip
           yAccessor={elder.accessor()}
           yLabel="Elder Ray"
