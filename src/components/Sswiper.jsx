@@ -1,6 +1,6 @@
 import React from "react";
 import Swiper from "react-id-swiper";
-const Default = () => (
+export const Sswiper = () => (
   <Swiper>
     <div>Slide #1</div>
     <div>Slide #2</div>
@@ -9,4 +9,3 @@ const Default = () => (
     <div>Slide #5</div>
   </Swiper>
 );
-export default Default;

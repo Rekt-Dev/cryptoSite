@@ -141,6 +141,8 @@ fon
   border-color: coral;
   align-items: left;
   justify-content: left;
+  box-shadow: 3px 3px 10px 10px #2c3f6d;
+
 
 }
 
@@ -331,5 +333,7 @@ fon
   font-size: 16px;
   box-shadow: 9px 9px 10px 10px #03000f;
   font-size: 1rem;
+  box-shadow: 2px 2px 3px 3px #2c3f6d;
+
   
 }
