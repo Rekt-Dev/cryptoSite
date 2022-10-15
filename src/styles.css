@@ -1,14 +1,15 @@
 
 
 .App {
-  font-family: sans-serif;
   text-align: center;
   font-weight: 500;
   display: flex;
   margin: 2rem auto;
   padding: 0 2rem;
   font-family: "Times New Roman", Times, serif;
-  background-color:  #FFFAFA	; ;
+  background-color:  rgb(30, 30, 30)	; 
+  font-smooth: always;
+color:white;
 }
 .form {
   max-width: 30rem;
@@ -194,6 +195,7 @@ fon
   border-radius: 3rem;
   justify-content: center;
   margin: 12px;
+  color:white
 }
 
 .flexRow {
