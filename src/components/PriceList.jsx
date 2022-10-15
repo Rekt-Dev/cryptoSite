@@ -12,7 +12,7 @@ export const PriceList = (props) => {
   const [currencies, setCurrencies] = useState();
   const coinz = [`btc`];
   async function getData() {
-    console.log(`getData activ8d`);
+    console.log(`getData activ8d @ ${Date.now()}`);
     const jsonData = "lol";
     const apiKey =
       "coinrankingdfa125c1105b3ec3b9af03ab2268054ae4a3c06015b4b547";
@@ -65,8 +65,8 @@ export const PriceList = (props) => {
           <table>
             <thead>
               <tr>
-                <th>{coins ? {coins[0].name}   }</th>
-                <th>{coins[0].price}</th>
+                <th></th>
+                <th></th>
                 <th>3</th>
                 <th>4</th>
                 <th>4</th>
@@ -77,14 +77,14 @@ export const PriceList = (props) => {
             </thead>
             <tbody>
               {coins
-                ? coins.map((coin) => <div key={coins.id} coins={coins} />)
-                : "No data to show"}
+                ? coins.map((coin, index) => <div key={index} coin={coin} />)
+                : "No data to show,go away"}
             </tbody>
           </table>
         </div>
+
         <div>
           coins: {coins}
-
           {/*  {jsonData.data
             ? jsonData.data.map((artWork, index) => (
                 <Card key={index} item={artWork} />
