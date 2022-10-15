@@ -9,8 +9,8 @@ export const Tickers = (props) => {
         {Number(props.coins[0]).toFixed(0)}{" "}
       </div>
 
-      <div className="tickers-internal justifyCenter">
-        toilETH {Number(props.coins[1]).toFixed(2)}
+      <div className="tickers-internal justifyCenter Eth">
+        {Number(props.coins[1]).toFixed(2)}
       </div>
 
       <div className="tickers-internal justifyCenter">

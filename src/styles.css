@@ -192,7 +192,14 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
-
+.Eth {
+  margin: 10px;
+  padding: 10px;
+  background-size: 12px;
+  background-image: url("https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
 .inputForm {
   width: 9.5rem;
 }
@@ -206,7 +213,6 @@
 .tickerNames {
   margin: 10px;
   padding: 10px;
-  background-image: url("https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=023");
   background-size: 12px;
 }
 
@@ -233,5 +239,4 @@
   font-size: 16px;
   box-shadow: 9px 9px 10px 10px #03000f;
   font-size: 1rem;
-  background-image: url("https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=023");
 }
