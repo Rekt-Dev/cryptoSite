@@ -165,6 +165,15 @@ fon
   height: 7rem;
   width: 25rem;
   box-shadow: 2px 2px 3px 3px #0c4d79;
+  border-style: ;
+}
+.BestPerformers{
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #1c6ea4;
+  width: 16rem;
+  height: 16rem;
+  box-shadow: 3px 3px 10px 10px #2c3f6d;
 }
 .MiniChart {
   padding: 10px;

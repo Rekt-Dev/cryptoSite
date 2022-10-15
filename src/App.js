@@ -5,6 +5,8 @@ import { Swiper } from "react-id-swiper";
 import { Sswiper } from "./components/Sswiper";
 import { Tickers } from "./components/Tickers/Tickers.jsx";
 import { Goi } from "./components/Goi";
+import { BestPerformers } from "./components/BestPerformers";
+
 /* import { FinancialChart } from "../components/FinancialChart/FinancialChart";
  */
 //import { Notifs } from "./components/Notifs";
@@ -150,7 +152,7 @@ export default function App() {
             />
           </div>
           <div className="flexColumn">
-            <LivePrices />
+            <BestPerformers />
             <WinLose />
             <Liquidations />
           </div>
