@@ -10,13 +10,11 @@ import {
 export const PriceList = (props) => {
   const [coins, setCoins] = useState();
   const [currencies, setCurrencies] = useState();
-  const coinz = [`btc`];
   async function getData() {
     var d = new Date();
     console.log(
       `getData activ8d @ ${d.toString()} // returns "Sun May 10 2015 19:50:08 GMT-0600 (MDT)"}`
     );
-    const jsonData = "lol";
     const apiKey =
       "coinrankingdfa125c1105b3ec3b9af03ab2268054ae4a3c06015b4b547";
     const url = "https://api.coinranking.com/v2/coins";
