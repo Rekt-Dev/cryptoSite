@@ -5,6 +5,8 @@ import { Swiper } from "react-id-swiper";
 import { Tickers } from "./components/Tickers/Tickers.jsx";
 import { Goi } from "./components/Goi";
 import { BestPerformers } from "./components/BestPerformers";
+import { Card } from "./components/Card";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -27,7 +29,7 @@ import { News } from "./components/News.jsx";
 //import cmc from "./services/cmc";
 export default function App() {
   const [jsonData, setJsonData] = useState([]);
-
+  const [coins, setCoins] = useState([]);
   const [currencies, setCurrencies] = useState([]);
   const [btcsPrice, setBtcsPrice] = useState(1000000);
   const [toilethsPrice, setToilethsPrice] = useState(-1500);
@@ -45,7 +47,7 @@ export default function App() {
   useEffect(() => {
     const oneTimer = setTimeout(() => {
       getData();
-      setJsonData();
+      setCoins(coins);
       console.log(`this is jsonData from default useeffect ${jsonData}`);
     }, 1000);
     return () => clearTimeout(oneTimer);
@@ -131,6 +133,10 @@ export default function App() {
               ]}
             />
           </div>
+          <Card
+            imgSrc={`https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfPxeHj8JUkN4fLzqo_L5NPrK-aJPkSJlxttC4RGuB8jEEojKw`}
+            btcPrice={btcsPrice}
+          />
           <Mcap function={getData} />
         </div>
 

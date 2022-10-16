@@ -1,6 +1,8 @@
 import { React, useNavigate } from "react";
 
 export let Card = (props) => {
+  /*   const nav = useNavigate();
+   */
   function truncate(str) {
     if (str) {
       return str.length > 17 ? str.substring(0, 13) + "..." : str;
@@ -21,11 +23,10 @@ export let Card = (props) => {
   //const artworkId = props.item.image_id;
   //let constructedLink = imageStartLink + artworkId + imageEndLink;
 
-  const navigate = useNavigate();
   return (
     <div>
       <div>
-        <div className="card" onClick={() => navigate(`opencoin`)}>
+        <div className="card" onClick={() => nav(`opencoin`)}>
           <img
             onError={({ currentTarget }) => {
               currentTarget.onerror = null; // prevents looping
@@ -35,29 +36,14 @@ export let Card = (props) => {
             alt=" 3 cats"
             height="300"
             width="300"
-            src={`https://www.artic.edu/iiif/2/${imageId}/full/843,/0/default.jpg`}
+            src={props.imgSrc}
             onMouseOut={() => console.log("out of hover")}
             onMouseOver={() => console.log("into hover")}
           />
           <div style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}></div>
-          <p
-            title={props.item.title}
-            className={"truncate alignLeft"}
-            onClick={() => navigate(`opencard`)}
-          >
-            Title: {truncate(props.item.title) || "Artist name"}
-          </p>
+          <p>Coin name: {props.btcsPrice}</p>
 
-          <p title={props.item.artist_title} className={"truncate alignLeft"}>
-            Artist: {truncate(props.item.artist_title) || "Title Name"}
-          </p>
-          <p
-            title={props.item.place_of_origin}
-            className={"truncate alignLeft"}
-            onClick={() => navigate(`goToArtist`)}
-          >
-            Origin: {truncate(props.item.place_of_origin) || "origin"}
-          </p>
+          <p></p>
         </div>
       </div>
       <br />

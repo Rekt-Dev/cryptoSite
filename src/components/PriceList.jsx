@@ -8,7 +8,7 @@ import {
   useNavigate
 } from "react-router-dom";
 
-export const PriceList = (props) => {
+export const PriceList = () => {
   const [coins, setCoins] = useState([]);
   async function getData() {
     let d = new Date();
@@ -35,6 +35,7 @@ export const PriceList = (props) => {
           setCoins(coinz);
 
           console.log(`btcs price:  ${coins[0].price}`);
+          console.log(`this is coins ${coins}`);
         }
       })
       .catch((error) => {
@@ -63,7 +64,9 @@ export const PriceList = (props) => {
           <div>{coins ? coins[0] : "lul nada here"}</div>
           <div>
             {coins
-              ? coins.map((coin, index) => <Card key={index} coin={coin} />)
+              ? coins.map((coin, index) => (
+                  <Card key={index} coin={coin.rank} />
+                ))
               : "No data to show,go away"}
           </div>
           <table>
@@ -141,9 +144,9 @@ export const PriceList = (props) => {
               </tr>
             </thead>
             <tbody>
-              {coins
+              {/*       {coins
                 ? coins.map((coin, index) => <div key={index} coin={coin} />)
-                : "No data to show,go away"}
+                : "No data to show,go away"} */}
             </tbody>
           </table>
         </div>
