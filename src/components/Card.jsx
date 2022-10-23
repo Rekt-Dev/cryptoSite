@@ -2,11 +2,13 @@ import { React } from "react";
 import { useNavigate } from "react-router-dom";
 export let Card = (props) => {
   const nav = useNavigate();
-
+  const updateSomething = () => {
+    console.log("updateSomething ran");
+  };
   return (
     <div>
       <div>
-        <div className="Card" onClick={() => nav(`opencoin`)}>
+        <div className="Card" /* onClick={() => nav(`opencoin`)} */>
           <img
             onError={({ currentTarget }) => {
               currentTarget.onerror = null; // prevents looping
@@ -16,13 +18,14 @@ export let Card = (props) => {
             alt=" 3 cats"
             height="300"
             width="300"
-            /*             src={props.imgSrc}
-             */ onMouseOut={() => console.log("out of hover")}
+            src={props.imgSrc}
+            onMouseOut={() => console.log("out of hover")}
             onMouseOver={() => console.log("into hover")}
           />
-          <div>bluh: {props[0]}</div>
+          <div>bluh: {props.btcsPrice}</div>
+          <button onClick={updateSomething}>press me 2 update something</button>
           <div style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}></div>
-          <p>Coin name: {props ? props.btcsPrice : "nada 2 show sire"}</p>
+          <p>Coin name: {props[1]}</p>
         </div>
         <div>coinss</div>
       </div>
