@@ -187,8 +187,7 @@ export default function App() {
             obj={currencies}
             imgSrc={btcIcon}
           />
-          <Mcap function={getData} />
-          <p>{Number(mcapBtc)}</p>
+          <Mcap function={getData} mcapBtc={mcapBtc} />
         </div>
 
         <div
