@@ -20,7 +20,7 @@ export let Card = (coins) => {
             onMouseOut={() => console.log("out of hover")}
             onMouseOver={() => console.log("into hover")}
           />
-          <div></div>
+          <div>bluh: {coins.btcsPrice}</div>
           <div style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}></div>
           <p>Coin name: {coins ? coins.btcsPrice : "nada 2 show sire"}</p>
         </div>
