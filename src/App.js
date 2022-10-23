@@ -54,6 +54,7 @@ export default function App() {
     const interval = setInterval(() => {
       getData();
       setJsonData();
+      setObj(coins);
 
       console.log(`this is jsonData from 85 sec useeffect ${jsonData}`);
     }, 85000);
