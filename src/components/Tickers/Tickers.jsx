@@ -5,6 +5,7 @@ export const Tickers = (props) => {
   return (
     <div className="flexRow tickerNames Header">
       <div className="tickers-internal Btc">
+        <img alt="stfu" src={props.}></img>
         BTC <br />
         {Number(props.coins[0]).toFixed(0)}
       </div>

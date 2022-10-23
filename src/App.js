@@ -135,6 +135,7 @@ export default function App() {
                 maticsPrice,
                 daisPrice
               ]}
+              obj={currencies}
             />
           </div>
           <Card
