@@ -69,9 +69,7 @@ export default function App() {
       setBtcIcon(coins[0].iconUrl);
       setMcapBtc(coins[0].marketCap);
 
-      console.log(
-        `this is jsonData from 85 sec recurring useeffect ${jsonData}`
-      );
+      console.log(`this is  from 85 sec recurring useeffect `);
     }, 85000);
     return () => clearInterval(interval);
   });
