@@ -25,6 +25,14 @@ import { News } from "./components/News.jsx";
 export default function App() {
   const [btcIcon, setBtcIcon] = useState("linkBtc");
   const [ethIcon, setEthIcon] = useState("linkEth");
+  const [bnbIcon, setBnbIcon] = useState("linkBnb");
+  const [xrpIcon, setXrpcon] = useState("linkEth");
+  const [adaIcon, setadaIcon] = useState("linkEth");
+  const [solIcon, setSolIcon] = useState("linkEth");
+  const [ethIcon, setEthIcon] = useState("linkEth");
+  const [ethIcon, setEthIcon] = useState("linkEth");
+  const [ethIcon, setEthIcon] = useState("linkEth");
+  const [ethIcon, setEthIcon] = useState("linkEth");
 
   const [obj, setObj] = useState({});
   const [jsonData, setJsonData] = useState([]);
@@ -105,7 +113,15 @@ export default function App() {
           setDotsPrice(coins[10].price);
           setMaticsPrice(coins[11].price);
           setDaisPrice(coins[12].price);
-          setBtcIcon(coins[0].iconUrl);
+          setEthIcon(coins[1].iconUrl);
+          setBnbIcon(coins[2].iconUrl);
+          setXrpIcon(coins[3].iconUrl);
+          setAdaIcon(coins[5].iconUrl);
+          setSolIcon(coins[6].iconUrl);
+          setDogeIcon(coins[7].iconUrl);
+          setDotIcon(coins[8].iconUrl);
+          setMaticIcon(coins[9].iconUrl);
+          setDaiIcon(coins[10].iconUrl);
 
           console.log(currencies);
           return currencies;
