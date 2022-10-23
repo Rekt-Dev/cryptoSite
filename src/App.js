@@ -66,8 +66,8 @@ export default function App() {
     const interval = setInterval(() => {
       getData();
       setObj(coins);
-      setBtcIcon(coins[0].iconUrl);
-      setMcapBtc(coins[0].marketCap);
+      /*       setBtcIcon(coins[0].iconUrl);
+       */ setMcapBtc(coins[0].marketCap);
 
       console.log(`this is  from 85 sec recurring useeffect `);
     }, 85000);
