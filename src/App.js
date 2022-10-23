@@ -143,7 +143,8 @@ export default function App() {
               dogesPrice,
               dotsPrice,
               maticsPrice,
-              daisPrice
+              daisPrice,
+              btcIcon
             ]}
             function={getData}
             imgSrc={btcIcon}
