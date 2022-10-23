@@ -26,8 +26,8 @@ export default function App() {
   const [btcIcon, setBtcIcon] = useState("linkBtc");
   const [ethIcon, setEthIcon] = useState("linkEth");
   const [bnbIcon, setBnbIcon] = useState("linkBnb");
-  const [xrpIcon, setXrpcon] = useState("linkEth");
-  const [adaIcon, setadaIcon] = useState("linkEth");
+  const [xrpIcon, setXrpIcon] = useState("linkEth");
+  const [adaIcon, setAdaIcon] = useState("linkEth");
   const [solIcon, setSolIcon] = useState("linkEth");
   const [dogeIcon, setDogeIcon] = useState("linkEth");
   const [dotIcon, setDotIcon] = useState("linkEth");
