@@ -23,6 +23,7 @@ import { News } from "./components/News.jsx";
 //import {query} from "./services/fetch"
 //import cmc from "./services/cmc";
 export default function App() {
+  const [obj, setObj] = useState({});
   const [jsonData, setJsonData] = useState([]);
   const [coins, setCoins] = useState([]);
   const [currencies, setCurrencies] = useState([]);
@@ -96,8 +97,6 @@ export default function App() {
           setDaisPrice(coins[12].price);
 
           console.log(currencies);
-
-          return currencies;
         }
       })
       .catch((error) => {
