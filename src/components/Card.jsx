@@ -19,7 +19,7 @@ export let Card = (props) => {
             alt=" 3 cats"
             height="300"
             width="300"
-            imgSrc={props.coinss[10]}
+            src={props.imgSrc}
             onMouseOut={() => console.log("out of hover")}
             onMouseOver={() => console.log("into hover")}
           />
