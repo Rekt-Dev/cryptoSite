@@ -144,6 +144,7 @@ export default function App() {
               maticsPrice,
               daisPrice
             ]}
+            function={getData}
           />
           <Mcap function={getData} />
         </div>
