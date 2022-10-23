@@ -23,6 +23,7 @@ import { News } from "./components/News.jsx";
 //import {query} from "./services/fetch"
 //import cmc from "./services/cmc";
 export default function App() {
+  const [btcIcon, setBtcIcon] = useState("link");
   const [obj, setObj] = useState({});
   const [jsonData, setJsonData] = useState([]);
   const [coins, setCoins] = useState([]);
@@ -97,6 +98,7 @@ export default function App() {
           setDotsPrice(coins[10].price);
           setMaticsPrice(coins[11].price);
           setDaisPrice(coins[12].price);
+          setBtcIcon(coins[0].iconUrl);
 
           console.log(currencies);
           return currencies;
