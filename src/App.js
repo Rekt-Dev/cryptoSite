@@ -131,7 +131,6 @@ export default function App() {
           </div>
           <Card
             imgSrc={`https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfPxeHj8JUkN4fLzqo_L5NPrK-aJPkSJlxttC4RGuB8jEEojKw`}
-            object={obj}
             coinss={[
               btcsPrice,
               toilethsPrice,

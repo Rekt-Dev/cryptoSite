@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 export let Card = (props) => {
   const nav = useNavigate();
   const updateSomething = () => {
-    console.log("updateSomething ran");
+    console.log("updateSomething ran bish");
+    props.function;
   };
   return (
     <div>
