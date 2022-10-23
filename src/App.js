@@ -23,6 +23,7 @@ import { News } from "./components/News.jsx";
 //import {query} from "./services/fetch"
 //import cmc from "./services/cmc";
 export default function App() {
+  const [mcapBtc, setMcapBtc] = useState("btcs Mcap");
   const [btcIcon, setBtcIcon] = useState("linkBtc");
   const [ethIcon, setEthIcon] = useState("linkEth");
   const [bnbIcon, setBnbIcon] = useState("linkBnb");
@@ -68,7 +69,8 @@ export default function App() {
       getData();
       setJsonData();
       setObj(coins);
-      setBtcIcon();
+      setBtcIcon(coins[0].iconUrl);
+      setMcapBtc(coins[0].marketCap);
 
       console.log(
         `this is jsonData from 85 sec recurring useeffect ${jsonData}`
@@ -124,6 +126,7 @@ export default function App() {
           setDogeIcon(coins[7].iconUrl);
           setDotIcon(coins[8].iconUrl);
           setDaiIcon(coins[10].iconUrl);
+          setMcapBtc(coins[0].marketCap);
 
           console.log(currencies);
           return currencies;
@@ -185,6 +188,7 @@ export default function App() {
             imgSrc={btcIcon}
           />
           <Mcap function={getData} />
+          <p>{Number(mcapBtc)}</p>
         </div>
 
         <div
