@@ -23,7 +23,9 @@ import { News } from "./components/News.jsx";
 //import {query} from "./services/fetch"
 //import cmc from "./services/cmc";
 export default function App() {
-  const [btcIcon, setBtcIcon] = useState("link");
+  const [btcIcon, setBtcIcon] = useState("linkBtc");
+  const [ethIcon, setEthIcon] = useState("linkEth");
+
   const [obj, setObj] = useState({});
   const [jsonData, setJsonData] = useState([]);
   const [coins, setCoins] = useState([]);
@@ -150,10 +152,10 @@ export default function App() {
               dotsPrice,
               maticsPrice,
               daisPrice,
-              "btcIcon",
-              obj
+              "btcIcon"
             ]}
             function={getData}
+            obj={currencies}
             imgSrc={btcIcon}
           />
           <Mcap function={getData} />
