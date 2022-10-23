@@ -150,7 +150,15 @@ export default function App() {
                 dogesPrice,
                 dotsPrice,
                 maticsPrice,
-                daisPrice
+                daisPrice,
+                ethIcon,
+                bnbIcon,
+                xrpIcon,
+                adaIcon,
+                solIcon,
+                dogeIcon,
+                dotIcon,
+                daiIcon
               ]}
               obj={currencies}
             />
