@@ -46,7 +46,9 @@ export default function App() {
       getData();
       setCoins(coins);
       setObj(coins);
-      console.log(`this is jsonData from default useeffect ${jsonData}`);
+      console.log(
+        `this is jsonData from default oneTimer useeffect ${jsonData}`
+      );
     }, 1000);
     return () => clearTimeout(oneTimer);
   }, []);
@@ -57,7 +59,9 @@ export default function App() {
       setJsonData();
       setObj(coins);
 
-      console.log(`this is jsonData from 85 sec useeffect ${jsonData}`);
+      console.log(
+        `this is jsonData from 85 sec recurring useeffect ${jsonData}`
+      );
     }, 85000);
     return () => clearInterval(interval);
   });
@@ -84,6 +88,7 @@ export default function App() {
       .then((response) => {
         if (response.status === "success") {
           console.log("RESPONSE SUCCESS !!!");
+          console.log(`this is btcIcon ${btcIcon}`);
           let coins = response.data.coins;
 
           console.log(`btcs price: ${coins[0].price}`);
@@ -144,7 +149,8 @@ export default function App() {
               dotsPrice,
               maticsPrice,
               daisPrice,
-              btcIcon
+              "btcIcon",
+              obj
             ]}
             function={getData}
             imgSrc={btcIcon}
