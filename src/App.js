@@ -57,9 +57,7 @@ export default function App() {
       getData();
       setCoins(coins);
       setObj(coins);
-      console.log(
-        `this is jsonData from default oneTimer useeffect ${jsonData}`
-      );
+      console.log(`this is the default oneTimer useeffect `);
     }, 1000);
     return () => clearTimeout(oneTimer);
   }, []);
@@ -67,7 +65,6 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       getData();
-      setJsonData();
       setObj(coins);
       setBtcIcon(coins[0].iconUrl);
       setMcapBtc(coins[0].marketCap);
