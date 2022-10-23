@@ -4,7 +4,7 @@ export let Card = (props) => {
   const nav = useNavigate();
   const updateSomething = () => {
     console.log("updateSomething ran bish");
-    props.function;
+    props.coinss.function;
   };
   return (
     <div>
@@ -19,16 +19,16 @@ export let Card = (props) => {
             alt=" 3 cats"
             height="300"
             width="300"
-            src={props.imgSrc}
+            src={props.coinss.imgSrc}
             onMouseOut={() => console.log("out of hover")}
             onMouseOver={() => console.log("into hover")}
           />
-          <div>bluh: {props.btcsPrice}</div>
+          <div>bluh: {props.coinss[0]}</div>
           <button onClick={updateSomething}>press me 2 update something</button>
           <div style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}></div>
-          <p>Coin name: {props[1]}</p>
+          <p>toileth: {props.coinss[1]}</p>
+          <div>coinss: </div>
         </div>
-        <div>coinss</div>
       </div>
       <br />
       <br />

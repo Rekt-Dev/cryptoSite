@@ -99,6 +99,7 @@ export default function App() {
           setDaisPrice(coins[12].price);
 
           console.log(currencies);
+          return currencies;
         }
       })
       .catch((error) => {
