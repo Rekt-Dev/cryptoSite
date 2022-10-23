@@ -44,6 +44,7 @@ export default function App() {
     const oneTimer = setTimeout(() => {
       getData();
       setCoins(coins);
+      setObj(coins);
       console.log(`this is jsonData from default useeffect ${jsonData}`);
     }, 1000);
     return () => clearTimeout(oneTimer);
