@@ -1,5 +1,6 @@
 import { React } from "react";
 import { useNavigate } from "react-router-dom";
+
 export let Card = (props) => {
   const nav = useNavigate();
   const updateSomething = () => {

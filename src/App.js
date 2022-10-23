@@ -68,6 +68,7 @@ export default function App() {
       getData();
       setJsonData();
       setObj(coins);
+      setBtcIcon();
 
       console.log(
         `this is jsonData from 85 sec recurring useeffect ${jsonData}`
@@ -113,6 +114,8 @@ export default function App() {
           setDotsPrice(coins[10].price);
           setMaticsPrice(coins[11].price);
           setDaisPrice(coins[12].price);
+          setBtcIcon(coins[0].iconUrl);
+
           setEthIcon(coins[1].iconUrl);
           setBnbIcon(coins[2].iconUrl);
           setXrpIcon(coins[3].iconUrl);
