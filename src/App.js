@@ -29,10 +29,10 @@ export default function App() {
   const [xrpIcon, setXrpcon] = useState("linkEth");
   const [adaIcon, setadaIcon] = useState("linkEth");
   const [solIcon, setSolIcon] = useState("linkEth");
-  const [ethIcon, setEthIcon] = useState("linkEth");
-  const [ethIcon, setEthIcon] = useState("linkEth");
-  const [ethIcon, setEthIcon] = useState("linkEth");
-  const [ethIcon, setEthIcon] = useState("linkEth");
+  const [dogeIcon, setDogeIcon] = useState("linkEth");
+  const [dotIcon, setDotIcon] = useState("linkEth");
+  const [shibIcon, setShibIcon] = useState("linkEth");
+  const [daiIcon, setDaiIcon] = useState("linkEth");
 
   const [obj, setObj] = useState({});
   const [jsonData, setJsonData] = useState([]);
