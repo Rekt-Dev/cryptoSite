@@ -120,7 +120,6 @@ export default function App() {
           setSolIcon(coins[6].iconUrl);
           setDogeIcon(coins[7].iconUrl);
           setDotIcon(coins[8].iconUrl);
-          setMaticIcon(coins[9].iconUrl);
           setDaiIcon(coins[10].iconUrl);
 
           console.log(currencies);
