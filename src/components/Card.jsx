@@ -1,32 +1,12 @@
-import { React, useNavigate } from "react";
-
+import { React } from "react";
+import { useNavigate } from "react-router-dom";
 export let Card = (props) => {
-  /*   const nav = useNavigate();
-   */
-  function truncate(str) {
-    if (str) {
-      return str.length > 17 ? str.substring(0, 13) + "..." : str;
-    }
-  }
-
-  /*   function dataOrDefault() {
-    const defaultLink =
-      "https://www.artic.edu/iiif/2/d68a3f34-411d-efd4-154e-48b9c565b125/full/843,/0/default.jpg";
-
-    if (props.item) {
-      return props.item.image_id;
-    } else return defaultLink;
-  } */
-  //const imageEndLink = "/full/843,/0/default.jpg";
-  //const imageStartLink = "https://www.artic.edu/iiif/2/";
-
-  //const artworkId = props.item.image_id;
-  //let constructedLink = imageStartLink + artworkId + imageEndLink;
+  const nav = useNavigate();
 
   return (
     <div>
       <div>
-        <div className="card" onClick={() => nav(`opencoin`)}>
+        <div className="Card" onClick={() => nav(`opencoin`)}>
           <img
             onError={({ currentTarget }) => {
               currentTarget.onerror = null; // prevents looping
@@ -41,9 +21,7 @@ export let Card = (props) => {
             onMouseOver={() => console.log("into hover")}
           />
           <div style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}></div>
-          <p>Coin name: {props.btcsPrice}</p>
-
-          <p></p>
+          <p>Coin name: {props ? props.btcsPrice : "nada 2 show sire"}</p>
         </div>
       </div>
       <br />
