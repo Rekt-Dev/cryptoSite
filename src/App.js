@@ -85,7 +85,7 @@ export default function App() {
           console.log("RESPONSE SUCCESS !!!");
           let coins = response.data.coins;
 
-          console.log(`btcs price:  ${coins[0].price}`);
+          console.log(`btcs price: ${coins[0].price}`);
           setCurrencies(coins);
           setBtcsPrice(coins[0].price);
           setToilethsPrice(coins[1].price);
