@@ -287,7 +287,8 @@ export default function App() {
                 solIcon,
                 dogeIcon,
                 dotIcon,
-                daiIcon
+                daiIcon,
+                dataMessari
               ]}
               obj={currencies}
             />
