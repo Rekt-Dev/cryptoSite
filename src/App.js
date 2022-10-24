@@ -23,6 +23,7 @@ import { MarketData } from "./components/MarketData";
 //import {query} from "./services/fetch"
 //import cmc from "./services/cmc";
 export default function App() {
+  const [dataMessari, setDataMessari] = useState({});
   const [mcapBtc, setMcapBtc] = useState("btcs Mcap");
   const [btcIcon, setBtcIcon] = useState("linkBtc");
   const [ethIcon, setEthIcon] = useState("linkEth");
