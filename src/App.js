@@ -67,7 +67,7 @@ export default function App() {
       getData();
       setObj(coins);
       setMcapBtc(coins[0].marketCap);
-
+      setDaisPrice(coins[12].price);
       console.log(`this is  from 85 sec recurring useeffect `);
     }, 85000);
     return () => clearInterval(interval);
