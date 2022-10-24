@@ -55,6 +55,7 @@ export default function App() {
   useEffect(() => {
     const oneTimer = setTimeout(() => {
       getData();
+      getDataMessari();
       setCoins(coins);
       setObj(coins);
       console.log(`this is the default oneTimer useeffect `);
@@ -65,6 +66,8 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       getData();
+      getDataMessari();
+      setDataMessari(getDataMessari());
       setObj(coins);
       setCoins(coins);
 
@@ -138,13 +141,6 @@ export default function App() {
     const url =
       "https://data.messari.io/api/v1/assets?bitcoinfields=id,slug,symbol,metrics";
     const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
-
-    const queryString = new URLSearchParams({
-      mode: `no-cors`,
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": `*`,
-      search: "Bit"
-    });
 
     await fetch(`${corsAnywhere}${url}`)
       .then((response) => response.json())
