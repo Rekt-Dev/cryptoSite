@@ -4,7 +4,7 @@ export const MarketData = (props) => {
   return (
     <div>
       Market Data component
-      <div>{props.coins[18]}</div>
+      <div>{props.coins[18].status}</div>
       <div>2</div>
       <div>3</div>
       <div>4</div>
