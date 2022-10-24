@@ -5,9 +5,11 @@ import { Card } from "../components/Card";
 import { FinancialChart } from "../components/FinancialChart/FinancialChart";
 /* import { Swiper } from "../components/Swiper";
  */
-import Swiper from "react-id-swiper";
+/* import Swiper from "react-id-swiper";
+ */
+
 export const BasicCharts = (props) => {
-  var myDataSource = {
+  /* var myDataSource = {
     chart: {
       caption: "Top 10 iOS Apps - July 2017",
       subCaption: "Downloads (In Millions)",
@@ -87,7 +89,7 @@ export const BasicCharts = (props) => {
     height: 400,
     dataFormat: "json",
     dataSource: myDataSource
-  };
+  }; */
 
   return (
     <div>
