@@ -5,10 +5,8 @@ import { FinancialChart } from "../components/FinancialChart/FinancialChart";
 export const Mcap = (props) => {
   return (
     <div className="Mcap">
-      <div>
-        <p>{Number(props.mcapBtc)}</p>
-      </div>
-      MarketCaps Component
+      <div>BTC market cap</div>
+      <p>{Number(props.mcapBtc)}</p>
     </div>
   );
 };
