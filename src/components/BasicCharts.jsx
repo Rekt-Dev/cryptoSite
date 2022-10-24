@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import { MiniChart } from "../components/MiniChart";
+import { Card } from "../components/Card";
 import { FinancialChart } from "../components/FinancialChart/FinancialChart";
 /* import { Swiper } from "../components/Swiper";
  */
@@ -92,11 +93,28 @@ export const BasicCharts = (props) => {
     <div>
       <div>Basic charts</div>
       <div>
-        <div></div>
+        <div>
+          <Card
+            coinss={[
+              props.btcsPrice,
+              props.toilethsPrice,
+              props.bnbsPrice,
+              props.xrpeesPrice,
+              props.adasPrice,
+              props.solsPrice,
+              props.dogesPrice,
+              props.dotsPrice,
+              props.maticsPrice,
+              props.daisPrice,
+              props.btcIcon
+            ]}
+          />
+        </div>
       </div>
 
       <div id="chart-container">
-        <Swiper />
+        {/*         <Swiper />
+         */}
       </div>
       <div></div>
     </div>

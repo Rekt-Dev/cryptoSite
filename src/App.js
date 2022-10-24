@@ -165,24 +165,7 @@ export default function App() {
               obj={currencies}
             />
           </div>
-          <Card
-            coinss={[
-              btcsPrice,
-              toilethsPrice,
-              bnbsPrice,
-              xrpeesPrice,
-              adasPrice,
-              solsPrice,
-              dogesPrice,
-              dotsPrice,
-              maticsPrice,
-              daisPrice,
-              "btcIcon"
-            ]}
-            function={getData}
-            obj={currencies}
-            imgSrc={btcIcon}
-          />
+
           <Mcap function={getData} mcapBtc={mcapBtc} joseph={coinMcapName} />
         </div>
 
