@@ -34,7 +34,7 @@ export default function App() {
   const [dotIcon, setDotIcon] = useState("linkEth");
   const [shibIcon, setShibIcon] = useState("linkEth");
   const [daiIcon, setDaiIcon] = useState("linkEth");
-
+  const [coinMcapName, setCoinMcapName] = useState("");
   const [obj, setObj] = useState({});
   const [jsonData, setJsonData] = useState([]);
   const [coins, setCoins] = useState([]);
@@ -122,7 +122,7 @@ export default function App() {
           setDotIcon(coins[8].iconUrl);
           setDaiIcon(coins[10].iconUrl);
           setMcapBtc(coins[0].marketCap);
-
+          setCoinMcapName(coins[0].name);
           console.log(currencies);
           return currencies;
         }
@@ -182,7 +182,7 @@ export default function App() {
             obj={currencies}
             imgSrc={btcIcon}
           />
-          <Mcap function={getData} mcapBtc={mcapBtc} />
+          <Mcap function={getData} mcapBtc={mcapBtc} joseph={coinMcapName} />
         </div>
 
         <div
