@@ -11,7 +11,7 @@ export const MarketData = (props) => {
             console.log(`object from messari ${props.coins[18]}`);
           }}
         >
-          refresh something
+          get data from Messari{" "}
         </button>
       </div>
       <div>3 </div>
