@@ -96,17 +96,17 @@ export const BasicCharts = (props) => {
         <div>
           <Card
             coinss={[
-              props.btcsPrice,
-              props.toilethsPrice,
-              props.bnbsPrice,
-              props.xrpeesPrice,
-              props.adasPrice,
-              props.solsPrice,
-              props.dogesPrice,
-              props.dotsPrice,
-              props.maticsPrice,
-              props.daisPrice,
-              props.btcIcon
+              props.coins[0],
+              props.coins[1],
+              props.coins.bnbsPrice,
+              props.coins.xrpeesPrice,
+              props.coins.adasPrice,
+              props.coins.solsPrice,
+              props.coins.dogesPrice,
+              props.coins.dotsPrice,
+              props.coins.maticsPrice,
+              props.coins.daisPrice,
+              props.coins[10]
             ]}
           />
         </div>
@@ -116,7 +116,7 @@ export const BasicCharts = (props) => {
         {/*         <Swiper />
          */}
       </div>
-      <div></div>
+      <div>{}</div>
     </div>
   );
 };

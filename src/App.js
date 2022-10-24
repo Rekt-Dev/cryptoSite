@@ -17,7 +17,7 @@ import { LivePrices } from "./components/LivePrices";
 import { WinLose } from "./components/WinLose";
 import { Liquidations } from "./components/Liquidations";
 import { Header } from "./components/Header.jsx";
-import { News } from "./components/News.jsx";
+import { MarketData } from "./components/MarketData";
 //import { getData } from "./services/getData.jsx";
 //import {consoleLog} from "./components/Tickers"
 //import {query} from "./services/fetch"
@@ -215,7 +215,29 @@ export default function App() {
             <Liquidations />
           </div>
           <div className="News">
-            <News />
+            <MarketData
+              coins={[
+                btcsPrice,
+                toilethsPrice,
+                bnbsPrice,
+                xrpeesPrice,
+                adasPrice,
+                solsPrice,
+                dogesPrice,
+                dotsPrice,
+                maticsPrice,
+                daisPrice,
+                ethIcon,
+                bnbIcon,
+                xrpIcon,
+                adaIcon,
+                solIcon,
+                dogeIcon,
+                dotIcon,
+                daiIcon
+              ]}
+              obj={currencies}
+            />
           </div>
         </div>
         <br />
