@@ -94,6 +94,7 @@ export const BasicCharts = (props) => {
       <div>Basic charts</div>
       <div>
         <div>
+          <div>{props.coins[11]}</div>
           <Card
             coinss={[
               props.coins[0],

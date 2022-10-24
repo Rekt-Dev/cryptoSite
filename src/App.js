@@ -150,7 +150,7 @@ export default function App() {
       .then((response) => response.json())
       .then((response) => {
         if (response.status === "success") {
-          console.log("RESPONSE SUCCESS !!!");
+          console.log("RESPONSE SUCCESS from messari !!!");
           console.log(`this is btcIcon ${btcIcon}`);
           let coins = response.data.coins;
 
@@ -249,7 +249,8 @@ export default function App() {
                 dogesPrice,
                 dotsPrice,
                 maticsPrice,
-                daisPrice
+                daisPrice,
+                btcIcon
               ]}
               function={getData}
             />
