@@ -140,7 +140,7 @@ export default function App() {
     console.log(`getDataMessari activ8d`);
 
     const url =
-      "https://data.messari.io/api/v1/assets?bitcoinfields=id,slug,symbol,metrics";
+      "https://data.messari.io/api/v1/assets?bitcoin fields=id,slug,symbol,metrics";
     const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
 
     await fetch(`${corsAnywhere}${url}`)
