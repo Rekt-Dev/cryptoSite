@@ -66,8 +66,8 @@ export default function App() {
     const interval = setInterval(() => {
       getData();
       setObj(coins);
-      setMcapBtc(coins[0].marketCap);
-      setDaisPrice(coins[12].price);
+      setCoins(coins);
+
       console.log(`this is  from 85 sec recurring useeffect `);
     }, 85000);
     return () => clearInterval(interval);
@@ -122,6 +122,8 @@ export default function App() {
           setDaiIcon(coins[10].iconUrl);
           setMcapBtc(coins[0].marketCap);
           setCoinMcapName(coins[0].name);
+          setMcapBtc(coins[0].marketCap);
+          setDaisPrice(coins[12].price);
           console.log(currencies);
           return currencies;
         }
