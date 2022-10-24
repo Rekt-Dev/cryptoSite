@@ -148,6 +148,7 @@ export default function App() {
       .then((response) => {
         if (response.status === "success") {
           console.log("RESPONSE SUCCESS from messari !!!");
+          console.log(response);
           console.log(`this is btcIcon ${btcIcon}`);
           let coins = response.data.coins;
 
