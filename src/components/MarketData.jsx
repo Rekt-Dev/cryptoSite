@@ -6,7 +6,13 @@ export const MarketData = (props) => {
       Market Data component
       <div></div>
       <div>
-        <button>refresh something</button>
+        <button
+          onClick={() => {
+            console.log("bruv ");
+          }}
+        >
+          refresh something
+        </button>
       </div>
       <div>3 </div>
       <div>4</div>
