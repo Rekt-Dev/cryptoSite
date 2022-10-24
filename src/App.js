@@ -81,14 +81,14 @@ export default function App() {
       "coinrankingdfa125c1105b3ec3b9af03ab2268054ae4a3c06015b4b547";
     const url = "https://api.coinranking.com/v2/coins";
     const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
-    /* 
+
     const queryString = new URLSearchParams({
       mode: `no-cors`,
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": `*`,
       "x-access-token": apiKey,
       search: "Bit"
-    }); */
+    });
 
     await fetch(`${corsAnywhere}${url}`)
       .then((response) => response.json())
@@ -131,8 +131,6 @@ export default function App() {
       .catch((error) => {
         console.error(error);
       });
-  }
-
   }
 
   //loggedIn?
