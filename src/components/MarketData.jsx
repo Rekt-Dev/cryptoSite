@@ -8,7 +8,7 @@ export const MarketData = (props) => {
       <div>
         <button
           onClick={() => {
-            console.log("bruv ");
+            console.log(`object from messari ${props.coins[18]}`);
           }}
         >
           refresh something
