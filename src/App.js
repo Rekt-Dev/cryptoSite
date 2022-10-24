@@ -123,7 +123,7 @@ export default function App() {
           setMcapBtc(coins[0].marketCap);
           setCoinMcapName(coins[0].name);
           setMcapBtc(coins[0].marketCap);
-          setDaisPrice(coins[12].price);
+          setDaisPrice(coins[13].price);
           console.log(currencies);
           return currencies;
         }
