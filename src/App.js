@@ -132,7 +132,62 @@ export default function App() {
         console.error(error);
       });
   }
+  async function getDataMessari() {
+    console.log(`getDataMessari activ8d`);
 
+    const url =
+      "https://data.messari.io/api/v1/assets?bitcoinfields=id,slug,symbol,metrics";
+    const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
+
+    const queryString = new URLSearchParams({
+      mode: `no-cors`,
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": `*`,
+      search: "Bit"
+    });
+
+    await fetch(`${corsAnywhere}${url}`)
+      .then((response) => response.json())
+      .then((response) => {
+        if (response.status === "success") {
+          console.log("RESPONSE SUCCESS !!!");
+          console.log(`this is btcIcon ${btcIcon}`);
+          let coins = response.data.coins;
+
+          console.log(`btcs price: ${coins[0].price}`);
+          setCurrencies(coins);
+          setBtcsPrice(coins[0].price);
+          setToilethsPrice(coins[1].price);
+          setBnbsPrice(coins[4].price);
+          setXrpeessPrice(coins[5].price);
+          setAdasPrice(coins[7].price);
+          setSolsPrice(coins[8].price);
+          setDogesPrice(coins[9].price);
+          setDotsPrice(coins[10].price);
+          setMaticsPrice(coins[11].price);
+          setDaisPrice(coins[12].price);
+          setBtcIcon(coins[0].iconUrl);
+
+          setEthIcon(coins[1].iconUrl);
+          setBnbIcon(coins[2].iconUrl);
+          setXrpIcon(coins[3].iconUrl);
+          setAdaIcon(coins[5].iconUrl);
+          setSolIcon(coins[6].iconUrl);
+          setDogeIcon(coins[7].iconUrl);
+          setDotIcon(coins[8].iconUrl);
+          setDaiIcon(coins[10].iconUrl);
+          setMcapBtc(coins[0].marketCap);
+          setCoinMcapName(coins[0].name);
+          setMcapBtc(coins[0].marketCap);
+          setDaisPrice(coins[13].price);
+          console.log(currencies);
+          return currencies;
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
   //loggedIn?
 
   return (
