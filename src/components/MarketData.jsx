@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MarketData = () => {
+export const MarketData = (props) => {
   return (
     <div>
       Market Data component
