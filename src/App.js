@@ -1,7 +1,7 @@
 import "./styles.css";
 import { useEffect, useState } from "react";
 import User from "./components/User/User";
-//import { FearnGreed } from "./components/FearnGreed";
+import { FearnGreed } from "./components/FearnGreed";
 
 //import { Swiper } from "react-id-swiper";
 import { Tickers } from "./components/Tickers/Tickers.jsx";
@@ -233,6 +233,9 @@ export default function App() {
             <User />
             <WinLose />
             <Liquidations />
+            <div>
+              <FearnGreed />
+            </div>
           </div>
           <div
             onClick={() => console.log("i was clicked basic charts")}
@@ -270,6 +273,7 @@ export default function App() {
             <WinLose />
             <Liquidations />
           </div>
+
           <div className="News">
             <MarketData
               coins={[
