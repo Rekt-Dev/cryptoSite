@@ -2,6 +2,8 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { MiniChart } from "../components/MiniChart";
 import { Card } from "../components/Card";
+
+import { FearnGreed } from "../components/FearnGreed";
 import { FinancialChart } from "../components/FinancialChart/FinancialChart";
 /* import { Swiper } from "../components/Swiper";
  */
@@ -92,11 +94,12 @@ export const BasicCharts = (props) => {
   }; */
 
   return (
-    <div>
+    <div className="Charts">
       <div>Basic charts</div>
       <div>
         <div>
           <div>{props.coins[11]}</div>
+
           <Card
             coinss={[
               props.coins[0],

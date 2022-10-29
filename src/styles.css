@@ -1,17 +1,19 @@
-
-
 .App {
   text-align: center;
   font-weight: 500;
   display: flex;
   font-family: "Times New Roman", Times, serif;
-  background-color:  rgb(30, 30, 30)	; 
+  background-color: rgb(30, 30, 30);
   font-smooth: always;
-color:white;
-justify-content: center
+  color: white;
+  justify-content: center;
 }
 .form {
   max-width: 30rem;
+}
+.FearnGreed {
+  width: 2px;
+  height: 15 rem;
 }
 
 .formGroup {
@@ -76,7 +78,6 @@ justify-content: center
   height: 7rem;
   border-radius: 10px;
   font-size: 16px;
-fon
 }
 .Notifs {
   padding: 10px;
@@ -137,15 +138,16 @@ fon
   border: 3px groove #1c6ea4;
   border-radius: 6px;
   box-shadow: 3px 3px 15px 12px #000000;
-  width: 100;
   border-color: coral;
   align-items: left;
   justify-content: left;
   box-shadow: 3px 3px 10px 10px #2c3f6d;
 
-
+  border: 2px solid #1c6ea4;
+  width: 40rem;
+  height: 53rem;
 }
-.Card{
+.Card {
   border: 5px solid rgb(32, 216, 87);
   height: 30%;
   padding: 5px;
@@ -176,7 +178,7 @@ fon
   width: 25rem;
   box-shadow: 2px 2px 3px 3px #0c4d79;
 }
-.BestPerformers{
+.BestPerformers {
   padding: 10px;
   margin: 10px;
   border: 2px solid #1c6ea4;
@@ -199,14 +201,6 @@ fon
   height: 11rem;
   width: 8%;
 }
-.Charts {
-  padding: 10px;
-  margin: 10px;
-  border: 2px solid #1c6ea4;
-  width: 40rem;
-  height: 53rem;
-
-}
 
 .Header {
   border: 3px solid #1c5ac3;
@@ -217,8 +211,8 @@ fon
   text-align: center;
   border-radius: 3rem;
   margin: 12px;
-  color:white;
-  padding:2px;
+  color: white;
+  padding: 2px;
 }
 
 .flexRow {
@@ -325,7 +319,6 @@ fon
   margin: 10px;
   padding: 10px;
   background-size: 12px;
-
 }
 
 .News {
@@ -352,6 +345,4 @@ fon
   box-shadow: 9px 9px 10px 10px #03000f;
   font-size: 1rem;
   box-shadow: 2px 2px 3px 3px #2c3f6d;
-
-  
 }
