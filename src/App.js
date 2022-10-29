@@ -1,6 +1,8 @@
 import "./styles.css";
 import { useEffect, useState } from "react";
 import User from "./components/User/User";
+import { FearnGreed } from "./components/FearnGreed";
+
 //import { Swiper } from "react-id-swiper";
 import { Tickers } from "./components/Tickers/Tickers.jsx";
 //import { Goi } from "./components/Goi";
@@ -229,6 +231,7 @@ export default function App() {
         <div id="wrapper-column" className="flexRow">
           <div className="flexColumn justifyCenter">
             <User />
+            <FearnGreed />
             <WinLose />
             <Liquidations />
           </div>
