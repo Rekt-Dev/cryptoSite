@@ -35,7 +35,7 @@ export default function App() {
   const [solIcon, setSolIcon] = useState("linkEth");
   const [dogeIcon, setDogeIcon] = useState("linkEth");
   const [dotIcon, setDotIcon] = useState("linkEth");
-  const [shibIcon, setShibIcon] = useState("linkEth");
+  // const [shibIcon, setShibIcon] = useState("linkEth");
   const [daiIcon, setDaiIcon] = useState("linkEth");
   const [coinMcapName, setCoinMcapName] = useState("");
   const [obj, setObj] = useState({});
