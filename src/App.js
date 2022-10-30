@@ -7,7 +7,7 @@ import { FearnGreed } from "./components/FearnGreed";
 import { Tickers } from "./components/Tickers/Tickers.jsx";
 //import { Goi } from "./components/Goi";
 import { BestPerformers } from "./components/BestPerformers";
-import { Card } from "./components/Card";
+//import { Card } from "./components/Card";
 
 import { BrowserRouter as Router, useNavigate } from "react-router-dom";
 /* import { FinancialChart } from "../components/FinancialChart/FinancialChart";
