@@ -103,17 +103,18 @@ export default function App() {
         if (response.status === "success") {
           console.log("RESPONSE SUCCESS !!!");
           console.log(`this is btcIcon ${btcIcon}`);
+          console.log(coins);
           let coins = response.data.coins;
 
           console.log(`btcs price: ${coins[0].price}`);
           setCurrencies(coins);
           setBtcsPrice(coins[0].price);
           setToilethsPrice(coins[1].price);
-          setBnbsPrice(coins[4].price);
+          setBnbsPrice(coins[3].price);
           setXrpeessPrice(coins[5].price);
           setAdasPrice(coins[7].price);
           setSolsPrice(coins[8].price);
-          setDogesPrice(coins[9].price);
+          setDogesPrice(coins[15].price);
           setDotsPrice(coins[10].price);
           setMaticsPrice(coins[11].price);
           setDaisPrice(coins[12].price);
