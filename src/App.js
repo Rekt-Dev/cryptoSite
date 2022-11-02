@@ -9,7 +9,7 @@ import { Tickers } from "./components/Tickers/Tickers.jsx";
 import { BestPerformers } from "./components/BestPerformers";
 //import { Card } from "./components/Card";
 
-import { BrowserRouter as Router, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 /* import { FinancialChart } from "../components/FinancialChart/FinancialChart";
  */
 //import { Notifs } from "./components/Notifs";
