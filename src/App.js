@@ -83,9 +83,10 @@ export default function App() {
   async function getData() {
     console.log(`getData activ8d`);
 
-    const apiKey =
+    /* const apiKey =
       "coinrankingdfa125c1105b3ec3b9af03ab2268054ae4a3c06015b4b547";
-    const url = "https://api.coinranking.com/v2/coins";
+ */ const url =
+      "https://api.coinranking.com/v2/coins";
     const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
 
     /*  const queryString = new URLSearchParams({
