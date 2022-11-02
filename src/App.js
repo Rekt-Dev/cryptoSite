@@ -38,8 +38,8 @@ export default function App() {
   // const [shibIcon, setShibIcon] = useState("linkEth");
   const [daiIcon, setDaiIcon] = useState("linkEth");
   const [coinMcapName, setCoinMcapName] = useState("");
-  const [obj, setObj] = useState({});
-  const [jsonData, setJsonData] = useState([]);
+  // const [obj, setObj] = useState({});
+  // const [jsonData, setJsonData] = useState([]);
   const [coins, setCoins] = useState([]);
   const [currencies, setCurrencies] = useState([]);
   const [btcsPrice, setBtcsPrice] = useState(1000000);
@@ -60,7 +60,7 @@ export default function App() {
       getData();
       getDataMessari();
       setCoins(coins);
-      setObj(coins);
+      // setObj(coins);
       console.log(`this is the default oneTimer useeffect `);
     }, 1000);
     return () => clearTimeout(oneTimer);
@@ -71,7 +71,7 @@ export default function App() {
       getData();
       getDataMessari();
       setDataMessari(getDataMessari());
-      setObj(coins);
+      // setObj(coins);
       setCoins(coins);
 
       console.log(`this is  from 85 sec recurring useeffect `);
