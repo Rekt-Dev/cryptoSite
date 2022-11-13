@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import App from "../App";
 
 export const Tickers = () => {
   const [jsonData, setJsonData] = useState({});
@@ -18,7 +17,7 @@ export const Tickers = () => {
 
   return (
     <div className="flexRow tickerNames">
-      <div className="tickers-internal justifyCenter">BTC </div>
+      <div className="tickers-internal justifyCenter"></div>
 
       <div className="tickers-internal ">ETH</div>
 

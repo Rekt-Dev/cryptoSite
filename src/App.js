@@ -18,7 +18,7 @@ import { News } from "./components/News.jsx";
 //import cmc from "./services/cmc"
 export default function App() {
   const [currencies, setCurrencies] = useState([]);
-  const [btcsPrice, setBtcsPrice] = useState(0);
+  const [btcsPrice, setBtcsPrice] = useState("1 billie yen");
   async function getData() {
     console.log(`getData activ8d`);
 
@@ -47,11 +47,6 @@ export default function App() {
           console.log(`here is btcsPrice:${btcsPrice}`);
           console.log(currencies);
 
-          console.log(
-            "success u toilet",
-            `here is btcs price: ${currencies[0]}`
-          );
-
           return currencies;
         }
       })
@@ -67,7 +62,7 @@ export default function App() {
           <Header />
           <div className="flexRow">
             <User />
-            <Tickers />
+            <Tickers price={btcsPrice} />
             <button onClick={getData}>bitcoins price update </button>
             <div className="Mcap">
               <Mcap />
