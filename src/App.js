@@ -141,7 +141,7 @@ export default function App() {
       });
   }
   async function getDataMessari() {
-    console.log(`getDataMessari activ8d`);
+    console.log(`getDataMessari activ8d `);
 
     const url =
       "https://data.messari.io/api/v1/assets?bitcoin fields=id,slug,symbol,metrics";
