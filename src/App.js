@@ -81,7 +81,7 @@ export default function App() {
 
   //const loggedIn
   async function getData() {
-    console.log(`getData activ8d`);
+    console.log(`getData activ8d async`);
 
     /* const apiKey =
       "coinrankingdfa125c1105b3ec3b9af03ab2268054ae4a3c06015b4b547";
