@@ -8,7 +8,7 @@ import { FinancialChart } from "../components/FinancialChart/FinancialChart";
 /* import { Swiper } from "../components/Swiper";
  */
 /* import Swiper from "react-id-swiper";
- */
+ **/
 
 export const BasicCharts = (props) => {
   /* var myDataSource = {
