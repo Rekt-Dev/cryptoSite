@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import User from "./components/User/User";
 import { FearnGreed } from "./components/FearnGreed";
 
-import { Swiper } from "react-id-swiper";
+// import { Swiper } from "react-id-swiper";
 import { Tickers } from "./components/Tickers/Tickers.jsx";
 //import { Goi } from "./components/Goi";
 import { BestPerformers } from "./components/BestPerformers";
