@@ -30,7 +30,11 @@ A crypto market dashboard built from scratch using React 18. Pulls live data fro
 
 This project was built during the early stages of learning React — no tutorials followed for the architecture, no AI assistance, no boilerplate beyond CRA. It's intentionally rough around the edges and represents genuine learning-by-doing.
 
-The project was later rebuilt from the ground up with a modern stack. See [cryptoSt8-v2](https://github.com/Rekt-Dev/cryptoSt8-v2) for the modernized version.
+The project was later rebuilt from the ground up with a modern stack. See [cryptoSt8-v2](https://github.com/Rekt-Dev/cryptoSt8-v2) for the modernized version with a live demo.
+
+## 🚀 See the Rebuild
+
+**[Live Demo → cryptoSt8 v2](https://stirring-cactus-62412e.netlify.app)**
 
 ## Run Locally
 
@@ -41,4 +45,4 @@ yarn start
 
 ---
 
-*v1 — 100% handwritten, pre-AI. Built by [Rekt Dev](https://github.com/Rekt-Dev)*
+*v1 — 100% handwritten, pre-AI. Built by [Rekt Dev](https://github.com/Rekt-Dev) · Invictus Crypto Strategies*
