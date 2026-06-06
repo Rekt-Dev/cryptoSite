@@ -34,7 +34,7 @@ The project was later rebuilt from the ground up with a modern stack. See [crypt
 
 ## 🚀 See the Rebuild
 
-**[Live Demo → cryptoSt8 v2](https://stirring-cactus-62412e.netlify.app)**
+**[Live Demo → cryptoSt8 v2](https://invictus-crypto.netlify.app)**
 
 ## Run Locally
 
